@@ -1,0 +1,34 @@
+.modal-backdrop.fade.show{
+  background: $fadeOverlayBrandColor2;
+}
+
+#feedbackModal{
+  .modal-content{
+    .modal-header{
+      border-bottom:none;
+    }
+    .modal-body{
+      form{
+        ul.rating{
+          padding-left:0;
+          li.star{
+            display: inline;
+            .fa-star{
+              width:36px;
+              height:36px;
+              color: $brandColor17;
+            }
+            &.filled{
+              .fa-star{
+                color: $brandColor1;
+              }
+            }
+          }
+        }
+        textarea{
+          width:75%;
+        }
+      }
+    }
+  }
+}

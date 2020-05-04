@@ -1,0 +1,28 @@
+.cta-banner-overflowing-image {
+  background:$linearGradient9to1;
+  .main-content{
+    text-align: center;
+  }
+  .overflowing-image{
+    img{
+      max-height: 200px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px){
+  .cta-banner-overflowing-image {
+    // margin-top:100px;
+    .main-content{
+      text-align:left;
+    }
+    .overflowing-image{
+      img{
+        position: absolute;
+        bottom:0;
+        max-height: 350px;
+      }
+    }
+  }
+
+}

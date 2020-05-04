@@ -1,0 +1,77 @@
+.home-hero {
+
+  overflow:hidden;
+
+  position: relative;
+
+  &:before{
+    content: "";
+
+    position: absolute;
+
+    bottom: -120vw;
+    right: -75vw;
+    width: 150vw;
+    height: 150vw;
+
+    background: $brandColor17;
+    border-radius:50%;
+
+    @media screen and (min-width: 992px){
+
+      top: -25vw;
+      right: -10vw;
+      width: 45vw;
+      height: 45vw;
+    }
+
+  }
+
+  background-color: lighten($brandColor17, 5%);
+  padding-bottom:0;
+
+  .main-content {
+    text-align: center;
+  }
+
+  .home-search {
+    @import 'component/search-form';
+  }
+
+  .did-you-know {
+    img{
+      height:1rem;
+    }
+    p {
+      margin-left: 30px;
+    }
+  }
+
+  .desktop-main-content .main-content{
+    @media screen and (min-width: 992px){
+      text-align: left;
+    }
+  }
+
+  .desktop-secondary-content{
+    img.white-circular-logo{
+      position:absolute;
+      top:0;
+      right:0;
+      background:white;
+      width: 96px;
+      padding:0.1em;
+      border-radius: 50%;
+      z-index:1;
+    }
+    img.img-fluid{
+      object-fit: contain;
+      object-position: bottom;
+      position:absolute;
+      bottom:0;
+      width:100%;
+      height:100%;
+      z-index:0;
+    }
+  }
+}

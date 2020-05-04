@@ -1,0 +1,80 @@
+@import './vars';
+@import './typography';
+@import './header';
+@import './footer';
+
+h1{
+  font-family: sofia-pro;
+}
+
+h2,h3,h4,h5,h6{
+  font-family: sofia-pro;
+}
+p{
+  font-family: sofia-pro;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.footer-blue-slogan,
+.footer-white-slogan{
+  max-width:300px;
+  width:50%;
+  position: relative;
+  z-index:999;
+}
+
+.btn-brandRounded{
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+}
+
+// SECTIONS
+
+@import './section/all';
+// @import './section/home-hero';
+// @import './section/compare-nav-blocks';
+// @import './section/header-2-columns';
+// @import './section/cta-banner-overflowing-image';
+// @import './section/compare-online-cards';
+// @import './section/faq';
+// @import './section/landing-hero';
+// @import './section/landing-stats-banner';
+// @import './section/landing-compare-online-cards';
+// @import './section/landing-read-our-guide';
+
+// COMPONENTS
+
+@import './component/all';
+// @import './component/menu-icon';
+// @import './component/search-form';
+// @import './component/slider';
+// @import './component/cookie-nag';
+// @import './component/notice-nag';
+// @import './component/feedback-modal';

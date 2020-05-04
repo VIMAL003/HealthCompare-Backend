@@ -1,0 +1,170 @@
+footer {
+  padding: 75px 0;
+  background-color: #1b1b1b;
+
+  * {
+    color: #fff;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  a {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+
+    &:hover {
+      text-decoration: none;
+      color: #037098;
+    }
+  }
+
+  .footer-upper__menu {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+
+      a {
+        font-size: 1.2rem;
+        padding-right: 20px
+      }
+    }
+  }
+
+  .footer-upper__secondary-menu {
+    li>a {
+      padding: 0 20px 0 0;
+      font-size: 1rem;
+      display: inline-block
+    }
+  }
+
+  .footer-upper {
+    .helping-you {
+      font-size: 1rem
+    }
+
+    .social {
+      text-align: right;
+
+      ul li {
+        list-style: none;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+
+        &:not(:first-child) {
+          margin-left: 20px;
+        }
+
+        .instagram-social svg,
+        .twitter-social svg {
+          width: 30px;
+        }
+
+        a {
+          display: -webkit-inline-box;
+          display: -webkit-inline-flex;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          color: #fff;
+          font-size: 2.5em;
+          left: 20px;
+
+          &:hover {
+            color: #037098;
+
+            & svg path {
+              stroke: #037098;
+              fill: #037098
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-lower {
+    background-color: #1b1b1b;
+    overflow: hidden;
+
+    .svg-wrapper {
+      margin: 0 -20px;
+      position: relative;
+
+      &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 15%
+      }
+
+      >.content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, -50%, 0)
+      }
+
+      svg {
+        stroke-dasharray: 10000;
+        stroke-dashoffset: 10000;
+        position: absolute;
+        top: 0
+      }
+
+      &.draw svg path {
+        -webkit-animation: drawheart 8s ease-in;
+        animation: drawheart 8s ease-in;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards
+      }
+    }
+  }
+
+}
+
+@-webkit-keyframes drawheart {
+  0% {
+      stroke-dashoffset: 10000
+  }
+
+  to {
+      stroke-dashoffset: 1000
+  }
+}
+
+@keyframes drawheart {
+  0% {
+      stroke-dashoffset: 10000
+  }
+
+  to {
+      stroke-dashoffset: 1000
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-upper .helping-you {
+    font-size: 1.2rem
+  }
+}
+
+@media (-ms-high-contrast:active),
+(-ms-high-contrast:none) {
+  .footer-lower .svg-wrapper {
+    background-image: url(../images/footer-heart.svg);
+    background-size: contain;
+    background-repeat: no-repeat
+  }
+
+  .footer-lower .svg-wrapper svg {
+    display: none
+  }
+}

@@ -1,0 +1,60 @@
+.landing-read-our-guide{
+
+  background: $linearGradient9to1;
+
+  overflow:hidden;
+  position:relative;
+
+  &:before{
+    content: "";
+
+    position: absolute;
+
+    left: -75vh;
+    top: calc( 50% - 75vh );
+    width: 150vh;
+    height: 150vh;
+
+    background: $linearGradient8Darkto8;
+    border-radius:50%;
+
+    z-index:0;
+
+    @media screen and (min-width: 992px){
+
+      left: -60vw;
+      top: calc( 50% - 60vw );
+      width: 120vw;
+      height: 120vw;
+    }
+
+  }
+
+  .card{
+    border:none;
+    .guide-cover-image{
+      text-align:center;
+      // @media screen and (min-width:992px){
+      //   text-align:left;
+      // }
+      img{
+        max-width:200px;
+      }
+    }
+
+    .guide-content{
+      text-align:center;
+      @media screen and (min-width:992px){
+        text-align:left;
+      }
+      ul{
+        text-align:left;
+      }
+    }
+
+    .main-content{
+      text-align:center;
+    }
+  }
+
+}

@@ -1,0 +1,52 @@
+.faq {
+  background:$linearGradient1to2;
+  position:relative;
+  overflow:hidden;
+  &:before{
+    content: "";
+
+    position: absolute;
+
+    left: -75vh;
+    top: calc( 50% - 75vh );
+    width: 150vh;
+    height: 150vh;
+
+    background: $linearGradient8Darkto8;
+    border-radius:50%;
+
+    z-index:0;
+
+    @media screen and (min-width: 992px){
+
+      left: -60vw;
+      top: calc( 50% - 60vw );
+      width: 120vw;
+      height: 120vw;
+    }
+
+  }
+  .card{
+    .main-content{
+      text-align: center;
+    }
+    .faq-list{
+      .faq-item:last-child{
+        hr{
+          display:none;
+        }
+      }
+    }
+    .cta-button{
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 992px){
+  .faq{
+    .main-content{
+      width: 66%;
+    }
+  }
+}

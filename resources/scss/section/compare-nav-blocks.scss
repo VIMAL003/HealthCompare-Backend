@@ -1,0 +1,24 @@
+.compare-nav-blocks {
+  background-color: lighten($brandColor17, 5%);
+  .card {
+    box-shadow: $boxShadowBrandColor17;
+    background-color: white;
+    padding: 20px 10px;
+    .card-body{
+      padding:0;
+      height:3rem;
+      text-align:center;
+      a{
+        font-size:0.75rem;
+        color: $brandColor1;
+      }
+    }
+
+
+    img {
+      object-fit: contain;
+      height: 40px;
+      max-width: 40px;
+    }
+  }
+}

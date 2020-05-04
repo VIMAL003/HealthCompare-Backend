@@ -1,0 +1,132 @@
+$brandColor1: #037098;
+$brandColor2: #3e92cc;
+$brandColor3: #00707c;
+$brandColor4: #18435a;
+$brandColor5: #8e00fe;
+$brandColor6: #de026d;
+$brandColor7: #0d69f2;
+$brandColor8: #00cfcc;
+$brandColor9: #073766;
+$brandColor10: #5e15d1;
+$brandColor11: #368632;
+$brandColor12: #efa00b;
+$brandColor13: #d93912;
+$brandColor14: #b50000;
+$brandColor15: #1b1b1b;
+$brandColor16: #757575;
+$brandColor17: #ececec;
+
+.bg-brandColor1{
+  background-color:$brandColor1!important;
+}
+.text-brandColor1{
+  color:$brandColor1;
+}
+.bg-brandColor2{
+  background-color:$brandColor2!important;
+}
+.text-brandColor2{
+  color:$brandColor2;
+}
+.bg-brandColor3{
+  background-color:$brandColor3!important;
+}
+.text-brandColor3{
+  color:$brandColor3;
+}
+.bg-brandColor4{
+  background-color:$brandColor4!important;
+}
+.text-brandColor4{
+  color:$brandColor4;
+}
+.bg-brandColor5{
+  background-color:$brandColor5!important;
+}
+.text-brandColor5{
+  color:$brandColor5;
+}
+.bg-brandColor6{
+  background-color:$brandColor6!important;
+}
+.text-brandColor6{
+  color:$brandColor6;
+}
+.bg-brandColor7{
+  background-color:$brandColor7!important;
+}
+.text-brandColor7{
+  color:$brandColor7;
+}
+.bg-brandColor8{
+  background-color:$brandColor8!important;
+}
+.text-brandColor8{
+  color:$brandColor8;
+}
+.bg-brandColor9{
+  background-color:$brandColor9!important;
+}
+.text-brandColor9{
+  color:$brandColor9;
+}
+.bg-brandColor10{
+  background-color:$brandColor10!important;
+}
+.text-brandColor10{
+  color:$brandColor10;
+}
+.bg-brandColor11{
+  background-color:$brandColor11!important;
+}
+.text-brandColor11{
+  color:$brandColor11;
+}
+.bg-brandColor12{
+  background-color:$brandColor12!important;
+}
+.text-brandColor12{
+  color:$brandColor12;
+}
+.bg-brandColor13{
+  background-color:$brandColor13!important;
+}
+.text-brandColor13{
+  color:$brandColor13;
+}
+.bg-brandColor14{
+  background-color:$brandColor14!important;
+}
+.text-brandColor14{
+  color:$brandColor14;
+}
+.bg-brandColor15{
+  background-color:$brandColor15!important;
+}
+.text-brandColor15{
+  color:$brandColor15;
+}
+.bg-brandColor16{
+  background-color:$brandColor16!important;
+}
+.text-brandColor16{
+  color:$brandColor16;
+}
+.bg-brandColor17{
+  background-color:$brandColor17!important;
+}
+.text-brandColor17{
+  color:$brandColor17;
+}
+
+$linearGradient9to1: linear-gradient($brandColor9, $brandColor1);
+$linearGradient1to2: linear-gradient($brandColor1, $brandColor2);
+$linearGradient8Darkto8: linear-gradient(darken($brandColor8, 10%), $brandColor8);
+$linearGradient17toWhite: linear-gradient($brandColor17, #ffffff);
+$linearGradientWhiteto17: linear-gradient( #ffffff, $brandColor17);
+
+
+$boxShadowBrandColor17: 0 0 10px darken($brandColor17, 10%);
+
+
+$fadeOverlayBrandColor2: transparentize( $brandColor2, 0.8);

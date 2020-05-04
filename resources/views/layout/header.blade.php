@@ -1,5 +1,55 @@
 <!-- _partials/header.blade.php -->
-<div id="top" class="header-wrapper">
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+    <div class="container">
+      <div class="d-flex flex-grow-1 mobile-header-nav">
+        <div class="w-100 text-right align-self-center d-lg-none">
+            @include('ui.component.menu_icon')
+          {{-- {{#embed "ui/component/menu-icon"}}
+          {{/embed}} --}}
+        </div>
+        <a class="navbar-brand mx-0 py-0" href="#">
+          <img src="../images/health-compare-logo.svg" width="200" alt="">
+        </a>
+        <div class="w-100 text-right  align-self-center d-lg-none">
+          <button class="mobile-search" type="button">
+            <img src="../images/search-icon.svg" alt="">
+          </button>
+        </div>
+      </div>
+      <div id="navbarContent" class="collapse navbar-collapse closed-sidebar">
+        <ul class="navbar-nav ml-auto h-100">
+          <!-- Megamenu-->
+          <li class="nav-item">
+            <a href="/" class="nav-link d-lg-none">Home</a>
+          </li>
+          <li class="nav-item dropdown megamenu">
+              {{-- @include('ui.section.megaMenuCompare') --}}
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Your Rights</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">News</a>
+          </li>
+          <li class="nav-item dropdown megamenu">
+              {{-- @include('ui.section.megaMenuHelp') --}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+{{-- <div id="top" class="header-wrapper">
     <header class="header" >
         <div class="container d-flex align-items-center justify-content-center justify-content-lg-between">
             <div id="menu_toggle" class="d-lg-none mr-auto"><img width="20px" height="20px"
@@ -58,7 +108,7 @@
 {{--                            </a>--}}
 {{--                        </li>--}}
 {{--                    @endif--}}
-                </ul>
+                {{-- </ul>
             </nav>
             @include('components.basic.modalbutton', [
                 'id'            => 'search_toggle',
@@ -70,7 +120,7 @@
 
         </div>
     </header>
-</div>
+</div> --}}
 
 
 

@@ -23,6 +23,7 @@
         @endif
 
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+        <link href="{{ mix('css/common.css') }}" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/icons/favicon/apple-touch-icon.png') }}">
         <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/icons/favicon/favicon-32x32.png') }}">
         <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/icons/favicon/favicon-16x16.png') }}">
@@ -104,6 +105,7 @@
         {{-- Stickybits is the script for handling position sticky cross browser --}}
         <script type="text/javascript" src="{{ asset('js/stickybits.js') }}"></script>
         <script src="{{ mix('js/app.js') }}"></script>
+        <script src="{{ mix('js/common.js') }}"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key={{ config('services.googleApiKey') }}"
                 async defer></script>
         <script>

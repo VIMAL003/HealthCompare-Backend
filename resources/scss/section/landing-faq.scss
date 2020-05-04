@@ -1,0 +1,26 @@
+.landing-faq {
+  .card{
+    border:none;
+    .main-content{
+      text-align: center;
+    }
+    .faq-list{
+      .faq-item:last-child{
+        hr{
+          display:none;
+        }
+      }
+    }
+    .cta-button{
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 992px){
+  .landing-faq{
+    .main-content{
+      width: 66%;
+    }
+  }
+}

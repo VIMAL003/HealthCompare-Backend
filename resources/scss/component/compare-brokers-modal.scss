@@ -1,0 +1,40 @@
+.modal-backdrop.fade.show{
+  background: $fadeOverlayBrandColor2;
+}
+
+#compareBrokersModal{
+  .modal-content{
+    .modal-header{
+      border-bottom:none;
+    }
+    .modal-body{
+      ul.provider-list{
+        list-style-type: none;
+        padding-left:0;
+        li{
+          .provider-logo{
+            img{
+              max-width: 200px;
+              max-height: 120px;
+            }
+          }
+          .provider-rating{
+            img{
+              max-width: 150px;
+              max-height: 90px;
+            }
+          }
+          .provider-actions{
+            .btn{
+              font-size: 1rem;
+              padding: 0.3rem 0.5rem;
+            }
+          }
+          &:not(:last-child){
+            border-bottom: 1px solid $brandColor17;
+          }
+        }
+      }
+    }
+  }
+}

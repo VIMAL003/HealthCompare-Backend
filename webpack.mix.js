@@ -44,8 +44,10 @@ mix.options({
     ],
     processCssUrls: false
 })
+    .sass('resources/scss/common.scss', 'public/css')
     .sass('resources/sass/app.scss', 'public/css')
     .js(['resources/js/app.js'], 'public/js')
+    .js(['resources/es6/common.js'], 'public/js')
     .sourceMaps(productionSourceMaps,"source-map")
     .version();
 
@@ -54,7 +56,9 @@ mix.options({
 mix.browserSync({
     injectChanges: true,
     files: [
+        'resources/scss/**/*.scss',
         'resources/sass/**/*.scss',
+        'resources/es6/**/*.js',
         'resources/js/**/*.js',
         'resources/views/**/*.blade.php',
         'public/images/**/*'
