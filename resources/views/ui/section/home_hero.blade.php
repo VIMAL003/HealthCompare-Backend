@@ -28,7 +28,7 @@
       <div class="col-12 col-lg-6 did-you-know d-lg-none order-3 order-lg-2">
         <h3 class="mt-2">Did you know:</h3>
         @foreach( $homeHero['didYouKnowList'] as $item)
-          <img src="../images/tick.svg" alt="" style="float:left;">
+          <img src="{{ \App\Helpers\Utils::convertAssetBaseUrl('../images/tick.svg') }}" alt="" style="float:left;">
           <p>{{$item}}</p>
         @endforeach
       </div>
@@ -46,7 +46,7 @@
         <div class="did-you-know py-3">
           <h3>Did you know:</h3>
           @foreach( $homeHero['didYouKnowList'] as $item)
-          <img src="../images/tick.svg" alt="" style="float:left;">
+          <img src="{{ \App\Helpers\Utils::convertAssetBaseUrl('../images/tick.svg') }}" alt="" style="float:left;">
           <p>{{$item}}</p>
         @endforeach
         </div>
@@ -57,8 +57,8 @@
         @yield('desktop-secondary-content')
       @else
       <div class="col-12 col-lg-6 desktop-secondary-content order-4 d-none d-lg-block order-lg-2">
-        <img src="../images/rcd/your-health-your-choice.svg" alt="" class="white-circular-logo">
-        <img class="img-fluid" src="../images/rcd/runners.png" alt="">
+        <img src="{{ \App\Helpers\Utils::convertAssetBaseUrl('../images/your-health-your-choice.svg') }}" alt="" class="white-circular-logo">
+        <img class="img-fluid" src="{{ \App\Helpers\Utils::convertAssetBaseUrl('../images/runners.png') }}" alt="">
       </div>
       @endif
     </div>

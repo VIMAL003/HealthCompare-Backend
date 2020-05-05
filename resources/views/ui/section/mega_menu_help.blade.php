@@ -5,7 +5,7 @@
       <div class="row py-0 py-lg-5 ">
         @foreach ($megaMenuHelp['sections'] as $section)
           <div class="col-12 col-lg-3">
-            <img class="" src="{{ asset( \App\Helpers\Utils::convertAssetBaseUrl($section['iconUrl']))}}" alt="">
+            <img class="" src="{{ \App\Helpers\Utils::convertAssetBaseUrl($section['iconUrl'])}}" alt="">
             <a href="{{$section['permalink']}}">{{$section['heading']}}</a>
             <p>{{$section['caption']}}</p>
           </div>

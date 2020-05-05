@@ -25,7 +25,7 @@
           <ul class="list">
             @foreach ($megaMenuCompare['lists'][1] as $listItem)
             <li>
-              <img src="{{ asset( \App\Helpers\Utils::convertAssetBaseUrl($listItem['iconUrl']) ) }}" alt="">
+              <img src="{{ \App\Helpers\Utils::convertAssetBaseUrl($listItem['iconUrl'] ) }}" alt="">
               <a href="{{$listItem['permalink']}}">{{$listItem['heading']}}</a>
             </li>
             @endforeach

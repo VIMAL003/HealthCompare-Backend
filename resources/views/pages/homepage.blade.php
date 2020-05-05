@@ -15,9 +15,9 @@
     @include('ui.section.home_hero')
 
 
-    {{-- @include('ui.section.compare_nav_blocks') --}}
+    @include('ui.section.compare_nav_blocks')
 
-    {{-- @include('ui.section.header_2_columns', ['wrapperClass'=>"pb-lg-5"]) --}}
+    @include('ui.section.header_2_columns', ['wrapperClass'=>"pb-lg-5"])
 
     {{-- @include('ui.section.cta_banner_overflowing_image') --}}
 
