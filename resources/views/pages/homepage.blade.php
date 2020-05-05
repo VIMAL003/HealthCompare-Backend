@@ -21,7 +21,7 @@
 
     @include('ui.section.cta_banner_overflowing_image')
 
-    {{-- @include('ui.section.compare_online_cards') --}}
+    @include('ui.section.compare_online_cards')
 
     {{-- @include('ui.section.faq') --}}
 
