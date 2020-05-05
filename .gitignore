@@ -12,13 +12,13 @@ package-lock.json
 # composer.lock        Heroku Specific
 yarn.lock
 /.idea/
-/public/css/
-/public/images/
-/public/fonts/
-/public/js/
-/public/video/
-/public/downloads/
-/public/mix-manifest.json
-/public/enquiries/
-/public/robots.txt
+# /public/css/        Heroku Specific
+# /public/images/
+# /public/fonts/
+# /public/js/
+# /public/video/
+# /public/downloads/
+# /public/mix-manifest.json
+# /public/enquiries/
+# /public/robots.txt
 *.zip
