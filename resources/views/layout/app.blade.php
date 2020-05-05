@@ -93,7 +93,11 @@
                               height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- End Google Tag Manager (noscript) -->
         @endif
+
+        @include('ui.component.cookie_nag')
         @include('layout.header')
+        @include('ui.component.notice_nag')
+
         @include('components.basic.specialAlert')
         @include('components.basic.alert')
 
@@ -102,6 +106,11 @@
         </main>
 
         @include('layout.footer', ['page_footer' => ''])
+
+
+        @include('ui.component.feedback_modal')
+        @include('ui.component.compare_brokers_modal')
+
         {{-- Stickybits is the script for handling position sticky cross browser --}}
         <script type="text/javascript" src="{{ asset('js/stickybits.js') }}"></script>
         {{-- <script src="{{ mix('js/app.js') }}"></script> --}}
