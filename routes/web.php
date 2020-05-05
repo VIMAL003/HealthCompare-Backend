@@ -23,6 +23,8 @@ if(env('APP_ENV') != 'live') {
     Route::get('/ajax-form','WebController@ajaxForm');
 }
 
+Route::get('/landing','WebController@landingPage');
+
 Route::get('/results-page','WebController@resultsPage');
 
 Route::get('/about-us','WebController@aboutUs');

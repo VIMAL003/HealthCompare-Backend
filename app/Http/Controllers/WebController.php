@@ -76,6 +76,53 @@ class WebController extends BaseController
     }
 
     /**
+     * Returns a list of Procedures ( at the moment these will be specialties because we don't have the actual list of Procedures)
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function landingPage() {
+        //Get the request and load it as variables
+        $request        = \Request::all();
+        $dynamicLocation    = !empty($request['loc'])           ? Validate::escapeString($request['loc'])               : '';
+        $dynamicProcedure   = !empty($request['prc'])           ? Validate::escapeString($request['prc'])               : '';
+        $dynamicHospital    = !empty($request['hn'])            ? Validate::escapeString($request['hn'])                : '';
+
+        //Dynamic Keyword Insertion Logic
+        $dynamicKeywordInsertion                = [
+            'location'      => $dynamicLocation,
+            'procedure'     => $dynamicProcedure,
+            'hospitalName'  => $dynamicHospital
+        ];
+
+        $dynamicKeywordText = 'Find the best hospitals';
+        if(!empty($dynamicKeywordInsertion['hospitalName']))
+            $dynamicKeywordText = 'Compare '.$dynamicKeywordInsertion['hospitalName'].' with others';
+        if(!empty($dynamicKeywordInsertion['procedure']))
+            $dynamicKeywordText .= ' for '.$dynamicKeywordInsertion['procedure'];
+        if(!empty($dynamicKeywordInsertion['location']))
+            $dynamicKeywordText .= ' in '.$dynamicKeywordInsertion['location'];
+
+        // Get JSON files until data in DB
+        $dataPath = storage_path('app/data/');
+        foreach (glob("$dataPath*.json") as $file) {
+            if ( ! File::exists($file) ){
+                continue;
+            }
+            $fileKey = str_replace( '.json', '', basename($file));
+            $fileDecoded = json_decode(file_get_contents($file), true);
+            $this->returnedData[$fileKey] = $fileDecoded;
+
+        }
+        // Setup Data
+        $this->returnedData['success']                          = true;
+        $this->returnedData['data']['dynamicKeywordText']       = $dynamicKeywordText;
+
+        //For Live environment just show the work in progress page
+        if(env('APP_ENV') == 'live')
+            return view('pages.workInProgress', $this->returnedData);
+        return view('pages.landing', $this->returnedData);
+    }
+
+    /**
      * Retrieves a list of hospitals based on the given inputs ( procedure_id, postcode and radius )
      * Also applies the filters and sorting (if provided)
      *
