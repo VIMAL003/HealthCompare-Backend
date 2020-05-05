@@ -22,6 +22,6 @@
 
     @include('ui.section.landing_read_our_guide')
 
-    {{-- @include('ui.section.landing-faq') --}}
+    @include('ui.section.landing_faq')
 
 @endsection
