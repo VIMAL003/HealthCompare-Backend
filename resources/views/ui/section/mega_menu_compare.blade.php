@@ -4,31 +4,31 @@
     <div class="container px-0 px-lg-3">
       <div class="row py-0 py-lg-5">
         <div class="col-12 col-lg-3 d-none d-lg-block context-image">
-          <img src="{{megaMenuCompare.imgUrl}}" alt="" class="img-fluid">
+          <img src="{{ asset( \App\Helpers\Utils::convertAssetBaseUrl($megaMenuCompare['imgUrl']) ) }}" alt="" class="img-fluid">
         </div>
         <div class="col-12 col-lg-3 d-none d-lg-block context-content">
-          <h4>{{megaMenuCompare.slogan}}</h4>
-          <h3>{{megaMenuCompare.heading}}</h3>
-          <a href="{{megaMenuCompare.ctaPermalink}}">{{megaMenuCompare.ctaText}}</a>
+          <h4>{{$megaMenuCompare['slogan']}}</h4>
+          <h3>{{$megaMenuCompare['heading']}}</h3>
+          <a href="{{$megaMenuCompare['ctaPermalink']}}">{{$megaMenuCompare['ctaText']}}</a>
         </div>
         <div class="col-12 col-lg-3 list-1">
           <ul class="list">
-            {{#each megaMenuCompare.lists.[0] as |listItem|}}
+            @foreach ($megaMenuCompare['lists'][0] as $listItem)
               <li>
-                <img src="{{listItem.iconUrl}}" alt="">
-                <a href="{{listItem.permalink}}">{{listItem.heading}}</a>
+                <img src="{{ asset( \App\Helpers\Utils::convertAssetBaseUrl($listItem['iconUrl']) ) }}" alt="">
+                <a href="{{$listItem['permalink']}}">{{$listItem['heading']}}</a>
               </li>
-            {{/each}}
+            @endforeach
           </ul>
         </div>
         <div class="col-12 col-lg-3 list-2">
           <ul class="list">
-            {{#each megaMenuCompare.lists.[1] as |listItem|}}
-              <li>
-                <img src="{{listItem.iconUrl}}" alt="">
-                <a href="{{listItem.permalink}}">{{listItem.heading}}</a>
-              </li>
-            {{/each}}
+            @foreach ($megaMenuCompare['lists'][1] as $listItem)
+            <li>
+              <img src="{{ asset( \App\Helpers\Utils::convertAssetBaseUrl($listItem['iconUrl']) ) }}" alt="">
+              <a href="{{$listItem['permalink']}}">{{$listItem['heading']}}</a>
+            </li>
+            @endforeach
           </ul>
         </div>
       </div>

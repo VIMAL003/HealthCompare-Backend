@@ -25,7 +25,7 @@
             <a href="/" class="nav-link d-lg-none">Home</a>
           </li>
           <li class="nav-item dropdown megamenu">
-              @include('ui.section.megaMenuCompare')
+              @include('ui.section.mega_menu_compare')
           </li>
           <li class="nav-item {{ Request::is('your-rights') ? 'active' : '' }}">
             <a href="{{url('/your-rights')}}" class="nav-link">Your Rights</a>
@@ -34,7 +34,7 @@
             <a href="{{url('/blog')}}" class="nav-link">News</a>
           </li>
           <li class="nav-item dropdown megamenu">
-              {{-- @include('ui.section.megaMenuHelp') --}}
+              @include('ui.section.mega_menu_help')
           </li>
         </ul>
       </div>

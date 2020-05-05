@@ -22,7 +22,7 @@
             <meta name="robots" content="noindex,nofollow">
         @endif
 
-        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+        {{-- <link href="{{ mix('css/app.css') }}" rel="stylesheet"> --}}
         <link href="{{ mix('css/common.css') }}" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/icons/favicon/apple-touch-icon.png') }}">
         <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/icons/favicon/favicon-32x32.png') }}">
@@ -104,7 +104,7 @@
         @include('layout.footer', ['page_footer' => ''])
         {{-- Stickybits is the script for handling position sticky cross browser --}}
         <script type="text/javascript" src="{{ asset('js/stickybits.js') }}"></script>
-        <script src="{{ mix('js/app.js') }}"></script>
+        {{-- <script src="{{ mix('js/app.js') }}"></script> --}}
 
         <script src="{{ mix('js/common.js') }}"></script>
         {{-- <script src="{{ mix('js/components/search-form.js') }}"></script> --}}
