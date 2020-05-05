@@ -1,0 +1,23 @@
+{
+  "heading":"At least 75% of our visitors search for Health Insurance",
+  "cards":[
+    {
+      "imgUrl": "../images/compare-online-bg.svg",
+      "label": "Compare Online",
+      "heading": "Compare the things that matter to you in a few minutes.",
+      "textContent": [
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet."
+      ],
+      "buttonText": "Compare online"
+    },
+    {
+      "imgUrl": "../images/compare-brokers-bg.svg",
+      "label": "Compare Brokers",
+      "heading": "Compare the things that matter to you in a few minutes.",
+      "textContent": [
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet."
+      ],
+      "buttonText": "Compare brokers"
+    }
+  ]
+}

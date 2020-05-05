@@ -1,0 +1,47 @@
+{
+  "heading":"Compare Health Insurance for Pre-Existing Conditions",
+  "subtitle": "Get fast access to the treatment you need with an affordable health insurance policy that covers pre-existing conditions, allowing you to continue doing the things you love. Most standard insurance policies won’t cover you for pre-existing conditions, but some brokers do over coverage. Hospital Compare has selected the available brokers and listed them below. Read our guide to pre-existing conditions.",
+  "providersHeading":"Contact a provider",
+  "providers":[
+    {
+      "logoImgUrl":"../images/saga-logo.svg",
+      "ratingImgUrl":"../images/reviews-logo.svg",
+      "description":"30 years' experience of providing fast access to diagnosis and private treatment for the over 50s.",
+      "cta":{
+        "enquiryPermalink":"mailto:some@address.com",
+        "websitePermalink":"/",
+        "phonePermalink":"tel:+15555555555"
+      }
+    },
+    {
+      "logoImgUrl":"../images/the-insurance-surgery-logo.svg",
+      "ratingImgUrl":"../images/google-logo.svg",
+      "description":"We are the go-to broker for insurance if you live with a pre-existing medical condition.",
+      "cta":{
+        "enquiryPermalink":"mailto:some@address.com",
+        "websitePermalink":"/",
+        "phonePermalink":"tel:+15555555555"
+      }
+    },
+    {
+      "logoImgUrl":"../images/general-medical-logo.svg",
+      "ratingImgUrl":"../images/trustpilot-logo.svg",
+      "description":"We offer coverage for an additional premium for pre-existing medical conditions with our Private Health Insurance.",
+      "cta":{
+        "enquiryPermalink":"mailto:some@address.com",
+        "websitePermalink":"/",
+        "phonePermalink":"tel:+15555555555"
+      }
+    },
+    {
+      "logoImgUrl":"../images/sutton-winson-logo.svg",
+      "ratingImgUrl":"../images/reviews-logo.svg",
+      "description":"Are you looking for Private Medical Insurance that’s fully extensive or a plan that just covers the essentials.",
+      "cta":{
+        "enquiryPermalink":"mailto:some@address.com",
+        "websitePermalink":"/",
+        "phonePermalink":"tel:+15555555555"
+      }
+    }
+  ]
+}

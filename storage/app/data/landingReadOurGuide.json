@@ -1,0 +1,14 @@
+{
+  "heading":"Read our guide",
+  "subtitle":"Still have a few things you'd like to clear up? We've put together the following simple answers to questions frequently though.",
+  "coverImgUrl":"../images/guide-cover.svg",
+  "listHeading":"In this guide",
+  "list":[
+    "What is health insurance for pre-existing conditions?",
+    "Nine health insurance need-to-knows",
+    "How to buy health insurance cheaply",
+    "What are typical costs?",
+    "How to complain about your provider"
+  ],
+  "buttonText":"Read our guide"
+}

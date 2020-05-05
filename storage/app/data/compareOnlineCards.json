@@ -1,0 +1,33 @@
+{
+  "slogan": "Your health, your choice",
+  "heading":"More ways to make the right choice",
+  "cards":[
+    {
+      "imgUrl": "../images/virtual-gp-consultations-lg.svg",
+      "label": "Virtual GP Consultations",
+      "heading": "Compare the things that matter to you in a few minutes.",
+      "textContent": [
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet."
+      ],
+      "buttonText": "Compare online"
+    },
+    {
+      "imgUrl": "../images/care-homes-lg.svg",
+      "label": "Care Home Compare",
+      "heading": "Compare the things that matter to you in a few minutes.",
+      "textContent": [
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet."
+      ],
+      "buttonText": "Compare online"
+    },
+    {
+      "imgUrl": "../images/health-insurance-lg.svg",
+      "label": "Health Insurance",
+      "heading": "Compare the things that matter to you in a few minutes.",
+      "textContent": [
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet."
+      ],
+      "buttonText": "Compare online"
+    }
+  ]
+}

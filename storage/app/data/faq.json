@@ -1,0 +1,25 @@
+{
+  "heading": "Frequently asked questions",
+  "subtitle": "Still have a few things you'd like to clear up? We've put together the following simple answers to questions frequently thought, but rarely asked, about finding the right hospital for your treament.",
+  "buttonText": "View all FAQs",
+  "list": [
+    {
+      "question": "Can I change hospitals if I’ve been waiting more than 18 weeks for treatment?",
+      "responseContent": [
+        "Yes. Patients have a right to start consultant-led treatment within 18 weeks of referral or request an offer of alternative providers that can start their treatment sooner. The NHS must take all reasonable steps to meet patients’ requests."
+      ]
+    },
+    {
+      "question": "Will I be charged for using Hospital Compare?",
+      "responseContent": [
+        "No, this service is completely free to the patient."
+      ]
+    },
+    {
+      "question": "Will the NHS really pay for me to have my NHS treatment at a private hospital?",
+      "responseContent": [
+        "Yes. If you are referred by a GP for NHS treatment, the NHS will pay for your treatment at an NHS or private hospital of your choice, as the Health and Social Care Act 2013 gives you the legal right to choose. There are some exceptions*, but most private hospitals across the UK have a contract with the NHS to perform treatments on their behalf. *(<a href='#exception'>click here for exception</a>)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "col1":{
+    "imgUrl":"../images/app-phone.svg"
+  },
+  "col2":{
+    "heading":"How does the hospital search work?",
+    "textContent":[
+      "You have the legal right to have your free NHS treatment at an NHS or private hospital of your choice. Use Hospital Compare to make this choice, or to select the best hospital paid for by you or your insurance."
+    ]
+  },
+  "col3":{
+    "cards":[
+      {
+        "imgUrl": "../images/search-and-compare.svg",
+        "heading": "Search and compare",
+        "subtitle": "Search over 800 hospitals in England and choose the right hospital for your treatment.",
+        "ctaText": "For more information click <a href='#here'>here</a>"
+      },
+      {
+        "imgUrl": "../images/make-enquiry.svg",
+        "heading": "Make enquiry",
+        "subtitle": "Use the site to make an enquiry at one more hospitals.",
+        "ctaText": "For more information click <a href='#here'>here</a>"
+      },
+      {
+        "imgUrl": "../images/request-a-referral.svg",
+        "heading": "Request a referral (NHS Treatment)",
+        "subtitle": "Inform your GP of your chosen hospital and request an appointment.",
+        "ctaText": "For more information click <a href='#here'>here</a>"
+      }
+    ]
+  }
+}

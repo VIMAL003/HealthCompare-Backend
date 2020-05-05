@@ -1,0 +1,33 @@
+{
+  "slogan": "<span class='text-brandColor1'>YOUR HEALTH YOUR CHOICE</span>",
+  "heading":"<span class='text-brandColor1'>Health Insurance</span> For Pre-Existing Conditions",
+  "checklist":[
+    "Avoid NHS waiting lists",
+    "See a private consultant of your choice",
+    "All featured brokers rate higher than 4 out of 5 on Trustpilot.co.uk or reviews.co.uk",
+    "All quotes free and with no obligation"
+  ],
+  "cards":[
+    {
+      "heading":"Compare Online",
+      "subtitle":"Compare quotes from a wide range of policies instantly online.",
+      "imgUrl": "../images/compare-online.svg",
+      "permalink": "#nav-item",
+      "cardClass": ""
+    },
+    {
+      "heading":"Compare Brokers",
+      "subtitle":"Compare then speak to an independent, fully qualiﬁed and FCA regulated advisor.",
+      "imgUrl": "../images/compare-brokers.svg",
+      "permalink": "#nav-item",
+      "cardClass": "compare-brokers-modal-trigger"
+    },
+    {
+      "heading":"Read Our Guide",
+      "subtitle":"Read our guide to help you make the right descision.",
+      "imgUrl": "../images/read-our-guide.svg",
+      "permalink": "#nav-item",
+      "cardClass": ""
+    }
+  ]
+}

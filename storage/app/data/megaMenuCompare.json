@@ -1,0 +1,53 @@
+{
+  "imgUrl":"../images/mega-menu-compare-graphic.jpg",
+  "slogan":"Your health, your choice",
+  "heading":"Choose the Right Hospital for Your Treatment",
+  "ctaText":"Search online",
+  "ctaPermalink":"#cta",
+  "lists": [
+    [
+      {
+        "heading":"Hospitals",
+        "iconUrl": "../images/hospitals.svg",
+        "permalink": "#nav-item"
+      },
+      {
+        "heading":"Doctors",
+        "iconUrl": "../images/virtual-gp-consultations.svg",
+        "permalink": "#nav-item"
+      },
+      {
+        "heading":"GP Practice",
+        "iconUrl": "../images/gp-practice.svg",
+        "permalink": "#nav-item"
+      },
+      {
+        "heading":"Consultants",
+        "iconUrl": "../images/consultants.svg",
+        "permalink": "#nav-item"
+      }
+    ],
+    [
+      {
+        "heading":"Health Products",
+        "iconUrl": "../images/healthcare-products.svg",
+        "permalink": "#nav-item"
+      },
+      {
+        "heading":"Health Insurance",
+        "iconUrl": "../images/health-insurance.svg",
+        "permalink": "#nav-item"
+      },
+      {
+        "heading":"Travel Insurance",
+        "iconUrl": "../images/travel-insurance.svg",
+        "permalink": "#nav-item"
+      },
+      {
+        "heading":"Care Homes",
+        "iconUrl": "../images/care-homes.svg",
+        "permalink": "#nav-item"
+      }
+    ]
+  ]
+}

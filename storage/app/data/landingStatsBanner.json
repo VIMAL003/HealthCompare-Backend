@@ -1,0 +1,34 @@
+{
+  "stats":[
+    {
+      "left":{
+        "imgUrl":"../images/ofgem.svg",
+        "custom":false
+      },
+      "right":{
+        "heading":"Accredited by Ofgem",
+        "caption":"and free to use"
+      }
+    },
+    {
+      "left":{
+        "imgUrl":"../images/5-star.svg",
+        "custom":false
+      },
+      "right":{
+        "heading":"Trusted by customers",
+        "caption":"<a class='text-white' href='#link'>based on 2,000+ reviews</a>"
+      }
+    },
+    {
+      "left":{
+        "imgUrl":"../images/number-1-uk.svg",
+        "custom":false
+      },
+      "right":{
+        "heading":"Health Compare Website",
+        "caption":"Helping you make the right choice"
+      }
+    }
+  ]
+}

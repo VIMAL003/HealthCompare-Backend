@@ -1,0 +1,51 @@
+{
+  "heading":"Compare",
+  "cards": [
+    {
+      "heading":"Virtual GP Consultations",
+      "iconUrl": "../images/virtual-gp-consultations.svg",
+      "permalink": "#nav-item"
+    },
+    {
+      "heading":"Hospitals",
+      "iconUrl": "../images/hospitals.svg",
+      "permalink": "#nav-item"
+    },
+    {
+      "heading":"GP Practice",
+      "iconUrl": "../images/gp-practice.svg",
+      "permalink": "#nav-item"
+    },
+    {
+      "heading":"Consultants",
+      "iconUrl": "../images/consultants.svg",
+      "permalink": "#nav-item"
+    },
+    {
+      "heading":"over 20,000 Health Products",
+      "iconUrl": "../images/healthcare-products.svg",
+      "permalink": "#nav-item"
+    },
+    {
+      "heading":"Health Insurance for Pre-Existing",
+      "iconUrl": "../images/health-insurance.svg",
+      "permalink": "#nav-item"
+    },
+    {
+      "heading":"Travel Insurance for Pre-Existing",
+      "iconUrl": "../images/travel-insurance.svg",
+      "permalink": "#nav-item"
+    },
+    {
+      "heading":"Care Homes",
+      "iconUrl": "../images/care-homes.svg",
+      "permalink": "#nav-item"
+    },
+    {
+      "heading":"Help & Guides",
+      "iconUrl": "../images/read-our-guide-mobile.svg",
+      "permalink": "#nav-item",
+      "cardClass": "d-lg-none"
+    }
+  ]
+}
