@@ -23,6 +23,6 @@
 
     @include('ui.section.compare_online_cards')
 
-    {{-- @include('ui.section.faq') --}}
+    @include('ui.section.faq')
 
 @endsection
