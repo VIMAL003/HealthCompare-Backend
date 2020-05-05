@@ -20,7 +20,7 @@
 
     @include('ui.section.landing_compare_online_cards')
 
-    {{-- @include('ui.section.compare_read_our_guide') --}}
+    @include('ui.section.landing_read_our_guide')
 
     {{-- @include('ui.section.landing-faq') --}}
 
