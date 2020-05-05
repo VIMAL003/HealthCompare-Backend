@@ -6,6 +6,7 @@ use App\Models\Enquiry;
 use App\Models\Insurance;
 use App\Models\Procedure;
 use App\Models\Specialty;
+use Illuminate\Support\Facades\Log;
 use Spatie\Sitemap\SitemapGenerator;
 
 
@@ -511,4 +512,18 @@ class Utils
     public static function getRankingPosition($ranking, $hospitalId) {
         return array_search($hospitalId, array_column($ranking, 'hospital_id')) + 1;
     }
+
+    /**
+     * Replaces asset path substring with another substring
+     *
+     * @param string $url
+     * @param string $toReplace
+     * @param string $replaceWith
+     * @return string
+     */
+    public static function convertAssetBaseUrl( $url, $toReplace = '../images', $replaceWith = 'images/rcd' ){
+        $returnedString = str_replace( $toReplace, $replaceWith, $url );
+        return $returnedString;
+    }
+
 }
