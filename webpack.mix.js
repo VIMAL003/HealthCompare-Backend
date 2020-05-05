@@ -48,6 +48,8 @@ mix.options({
     .sass('resources/sass/app.scss', 'public/css')
     .js(['resources/js/app.js'], 'public/js')
     .js(['resources/es6/common.js'], 'public/js')
+    .js(['resources/es6/components/search-form.js'], 'public/js/components/')
+    .js(['resources/es6/components/compare-brokers-modal.js'], 'public/js/components/')
     .sourceMaps(productionSourceMaps,"source-map")
     .version();
 
