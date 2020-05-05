@@ -17,10 +17,10 @@
           <li>
             <div class="row py-3 align-items-center">
               <div class="col-12 col-lg-2 provider-logo my-3 my-lg-0 text-center">
-                <img src="{{$provider['logoImgUrl']}}" class="mx-auto img-fluid" alt="">
+                <img src="{{\App\Helpers\Utils::convertAssetBaseUrl($provider['logoImgUrl'])}}" class="mx-auto img-fluid" alt="">
               </div>
               <div class="col-12 col-lg-2 provider-rating my-2 my-lg-0 text-center">
-                <img src="{{$provider['ratingImgUrl']}}" class="mx-auto img-fluid" alt="">
+                <img src="{{\App\Helpers\Utils::convertAssetBaseUrl($provider['ratingImgUrl'])}}" class="mx-auto img-fluid" alt="">
               </div>
               <div class="col-12 col-lg-5 provider-description my-1 my-lg-0 text-center text-lg-left">
                 <p class="mb-0">{{$provider['description']}}</p>
@@ -28,7 +28,7 @@
               <div class="col-12 col-lg-3 provider-actions">
                 <div class="row row-cols-2">
                   <div class="col-12 mb-1">
-                    <a href="{{$provider['cta']['enquiryPermalink']}}" class="btn btn-brandRounded text-white bg-brandColor7 w-100">Make enquiry</a>
+                    <a href="{{$provider['cta']['enquiryPermalink']}}" class="btn btn-brandRounded text-white bg-brandColor10 w-100">Make enquiry</a>
                   </div>
                   <div class="col pr-0">
                     <a href="{{$provider['cta']['websitePermalink']}}" class="btn btn-brandRounded rounded-right text-white bg-brandColor9 w-100">

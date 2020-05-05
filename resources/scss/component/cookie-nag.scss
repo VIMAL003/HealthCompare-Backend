@@ -1,12 +1,21 @@
 .cookie-nag{
   .alert{
     p{
-      width:90%;
+      width:80%;
     }
     .btn{
       opacity:1;
-      background-color:initial;
+      background-color: $brandColor1 !important;
       font-size:1rem;
+      padding: 14px 26px !important;
+      border-radius: 5px;
+      text-shadow: none;
+      font-family: inherit;
+      font-size: 0.8rem;
+    }
+    .btn:hover {
+      background-color: $brandColor7 !important;
+      opacity: 1 !important;
     }
   }
 }

@@ -32,16 +32,21 @@
 
     left: 45vw;
     bottom: -25vw;
-    width: 50vw;
-    height: 50vw;
+    width: 70vw;
+    height: 70vw;
 
-    background: $brandColor17;
+    background: $brandColor18;
     border-radius: 50%;
 
     z-index: 1;
 
   }
 
+
+  h2 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+  }
 
   .container {
     z-index: 2;
@@ -51,17 +56,36 @@
     }
     .landing-nav-blocks {
       .card {
-        box-shadow: $boxShadowBrandColor17;
+        box-shadow: 0 0 10px #dfdfdf;
+        background-color: white;
+        padding: 30px 10px;
+        border: none;
+        display: flex;
+        height: 100%;
         text-align: center;
-
         img {
+          object-fit: contain;
           height: 40px;
+          max-width: 60px;
+          margin-bottom: 0.5rem;
+        }
+        p {
+          font-size: 1rem;
+          color: $brandColor16;
+        }
+      }
+      .card:hover {
+        background-color: $brandColor18;
+        text-decoration: none !important;
+        a:hover {
+          text-decoration: none !important;
         }
       }
     }
     .checklist {
       img {
         height: 1rem;
+        margin-top: 5px;
       }
 
       p {
@@ -87,5 +111,8 @@
     }
   }
 
+  .bottom-text-cta a {
+    text-decoration: underline;;
+  }
 
 }

@@ -1,4 +1,4 @@
-<div class="container_fluid header-2-columns {{!empty($wrapperClass) ? $wrapperClass : '' }}">
+<div class="container_fluid header-2-columns mt-5 {{!empty($wrapperClass) ? $wrapperClass : '' }}">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6 left-side py-3 order-1">

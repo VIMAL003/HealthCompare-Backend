@@ -15,6 +15,12 @@ $brandColor14: #b50000;
 $brandColor15: #1b1b1b;
 $brandColor16: #757575;
 $brandColor17: #ececec;
+$brandColor18: #E5F0F4;
+$brandColor19: #F9F8FA;
+$brandColor20: #FFFFFF;
+$brandColor21: #008BA9;
+$brandColor22: #037098;
+
 
 .bg-brandColor1{
   background-color:$brandColor1!important;
@@ -120,13 +126,39 @@ $brandColor17: #ececec;
 }
 
 $linearGradient9to1: linear-gradient($brandColor9, $brandColor1);
-$linearGradient1to2: linear-gradient($brandColor1, $brandColor2);
+$linearGradient1to2: linear-gradient($brandColor22, $brandColor21);
 $linearGradient8Darkto8: linear-gradient(darken($brandColor8, 10%), $brandColor8);
 $linearGradient17toWhite: linear-gradient($brandColor17, #ffffff);
 $linearGradientWhiteto17: linear-gradient( #ffffff, $brandColor17);
+$linearGradientWhiteto19: linear-gradient( #ffffff, $brandColor19);
 
 
-$boxShadowBrandColor17: 0 0 10px darken($brandColor17, 10%);
+$boxShadowBrandColor17: 0 0 10px darken($brandColor17, 5%);
 
 
 $fadeOverlayBrandColor2: transparentize( $brandColor2, 0.8);
+
+a{
+  color:$brandColor1;
+}
+
+body {
+  color:$brandColor16;
+}
+
+h1,h2,h3,h4,h5 {
+  color:$brandColor15;
+}
+
+.text-white h3 {
+  color: #fff;
+}
+
+.btn.bg-brandColor1:hover,
+.btn.bg-brandColor6:hover {
+  background-color:$brandColor7!important;
+}
+
+.custom-select {
+  color: $brandColor16;
+}

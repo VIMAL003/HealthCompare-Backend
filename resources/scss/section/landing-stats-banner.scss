@@ -1,5 +1,20 @@
 .landing-stats-banner{
+  .row {
+    align-items: center;
+    .col-9 {
+      padding-left: 0;
+    }
+  }
   img{
     height:60px;
+  }
+  h5 {
+    color:$brandColor20; 
+    margin-bottom: 0.3rem !important;
+  }
+  p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 0.85rem;
   }
 }

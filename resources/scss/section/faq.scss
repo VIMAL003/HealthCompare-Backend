@@ -12,7 +12,7 @@
     width: 150vh;
     height: 150vh;
 
-    background: $linearGradient8Darkto8;
+    background: rgba(255,255,255,0.2);
     border-radius:50%;
 
     z-index:0;
@@ -27,8 +27,19 @@
 
   }
   .card{
+    .card-body {
+      padding: 3rem 6rem;
+    }
     .main-content{
       text-align: center;
+      h3 {
+        margin-bottom: 2.5rem;
+      }
+      h4 {
+        color:$brandColor16;
+        line-height: 1.8rem;
+        margin-bottom: 1rem;
+      }
     }
     .faq-list{
       .faq-item:last-child{
@@ -36,9 +47,18 @@
           display:none;
         }
       }
+      h4 {
+        margin-bottom: 1rem;;
+      }
+      hr {
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+      }
     }
     .cta-button{
       text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
     }
   }
 }
@@ -46,7 +66,7 @@
 @media screen and (min-width: 992px){
   .faq{
     .main-content{
-      width: 66%;
+      width: 80%;
     }
   }
 }

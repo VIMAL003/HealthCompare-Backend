@@ -134,6 +134,27 @@ header {
             border: none;
             width: 100%;
 
+            h3 {
+              font-size: 1.2rem;
+            }
+
+            h4 {
+              color: $brandColor1;
+              font-size: 1.1rem;
+            }
+            
+            a {
+              color: $brandColor15;
+              text-decoration: underline;
+            }
+
+            .d-lg-block {
+              display: flex !important;
+                flex-direction: column;
+                text-align: left;
+                justify-content: center;
+            }
+
             &.mega-menu-compare {
 
               .list-1,
@@ -144,13 +165,16 @@ header {
 
                   li {
                     padding-left: 0;
+                    margin-bottom: 0.5rem;
 
                     img {
-                      width: 1rem;
+                      width: 1.2rem;
                     }
 
                     a {
                       color: $brandColor1;
+                      text-decoration: none;
+                      font-size: 1.1rem;
 
                       margin-left: 1rem;
 
@@ -163,6 +187,10 @@ header {
                       border-bottom: none;
                       padding-left: 1rem;
                     }
+
+                    a:hover {
+                      color: $brandColor7;
+                    }
                   }
 
                 }
@@ -172,17 +200,24 @@ header {
             &.mega-menu-help {
               img {
                 width: 1.5rem;
+                margin-bottom: 1rem;
               }
 
               a {
                 display: block;
                 color: $brandColor1;
+                text-decoration: none;
+                margin-bottom: 0.5rem;
 
                 margin-left: 1rem;
 
                 @media screen and (min-width: 992px) {
                   margin-left: 0;
                 }
+              }
+
+              a:hover {
+                color: $brandColor7;
               }
             }
           }

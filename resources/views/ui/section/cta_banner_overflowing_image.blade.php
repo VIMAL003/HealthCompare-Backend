@@ -1,7 +1,7 @@
 <div class="container_fluid cta-banner-overflowing-image">
   <div class="container">
     <div class="row row-cols-1 row-cols-lg-2">
-      <div class="col main-content text-white py-3">
+      <div class="col main-content text-white py-5">
         <h3>{{$ctaBannerOverflowingImage['heading']}}</h3>
         @foreach ($ctaBannerOverflowingImage['textContent'] as $textContent)
         <p>{{$textContent}}</p>

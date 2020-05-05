@@ -1,5 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
 
+@import url('https://use.typekit.net/brk7bxq.css');
+
 @import './vars';
 @import './typography';
 @import './header';
@@ -13,6 +15,17 @@ h2,h3,h4,h5,h6{
   font-family: sofia-pro;
 }
 p{
+  font-family: sofia-pro;
+}
+
+header #navbarContent > ul.navbar-nav li.nav-item a.nav-link,
+.btn,
+a,
+span,
+.form-control,
+.custom-select,
+ul,
+body {
   font-family: sofia-pro;
 }
 
@@ -46,7 +59,7 @@ p {
 
 .footer-blue-slogan,
 .footer-white-slogan{
-  max-width:300px;
+  max-width:200px;
   width:50%;
   position: relative;
   z-index:999;
@@ -55,6 +68,14 @@ p {
 .btn-brandRounded{
   padding: 0.75rem 2rem;
   border-radius: 2rem;
+  font-size: 0.9rem !important;
+}
+
+.btn:focus,.btn:active,
+.form-control:focus,.form-control:active,
+.custom-select:focus,.custom-select:active {
+  outline: none !important;
+  box-shadow: none;
 }
 
 // SECTIONS

@@ -43,7 +43,7 @@
           <h2>{!! $homeHero['heading'] !!}</h2>
           <p>{{$homeHero['subtitle']}}</p>
         </div>
-        <div class="did-you-know py-3">
+        <div class="did-you-know py-3 pr-5 mb-3">
           <h3>Did you know:</h3>
           @foreach( $homeHero['didYouKnowList'] as $item)
           <img src="{{ \App\Helpers\Utils::convertAssetBaseUrl('../images/tick.svg') }}" alt="" style="float:left;">

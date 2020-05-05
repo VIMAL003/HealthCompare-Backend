@@ -1,5 +1,5 @@
 .header-2-columns {
-  background: $linearGradientWhiteto17;
+  background: $linearGradientWhiteto19;
   .main-content {
     text-align: center;
   }
@@ -16,16 +16,33 @@
   .right-side {
     .card {
       box-shadow: $boxShadowBrandColor17;
-      text-align: center;
-
+      text-align: left;
+      padding: 40px 30px !important;
       img {
-        max-height: 150px
+        max-height: 110px;
+        margin-bottom: 0;
+        padding-bottom: 0 !important;
       }
 
       .slick-slide {
         >div {
           padding: 0.5rem;
         }
+      }
+      .col-lg-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h4 {
+        margin-bottom: 1rem;
+      }
+      span {
+        color: $brandColor15;
+      }
+      span a {
+        color: $brandColor15;
+        text-decoration: underline;
       }
     }
   }
@@ -36,7 +53,7 @@
     .left-side {
       .left-side-image {
         object-fit: unset;
-        height: unset;
+        height: 80%;
       }
     }
   }

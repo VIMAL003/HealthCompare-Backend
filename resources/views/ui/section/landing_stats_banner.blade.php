@@ -1,4 +1,4 @@
-<div class="container_fluid landing-stats-banner bg-brandColor1 text-white py-3">
+<div class="container_fluid landing-stats-banner bg-brandColor1 text-white py-4">
   <div class="container">
     <div class="row row-cols-1 row-cols-lg-3">
       @foreach ( $landingStatsBanner['stats'] as $stat )

@@ -3,22 +3,27 @@
   .card {
     box-shadow: $boxShadowBrandColor17;
     background-color: white;
-    padding: 20px 10px;
+    padding: 30px 10px;
+    border: none;
+    display: flex;
+    height: 100%;
     .card-body{
       padding:0;
-      height:3rem;
       text-align:center;
       a{
-        font-size:0.75rem;
+        font-size:1rem;
         color: $brandColor1;
       }
     }
 
-
     img {
       object-fit: contain;
-      height: 40px;
-      max-width: 40px;
+      height: 35px;
+      max-width: 35px;
+      margin-bottom: 0.5rem;
     }
+  }
+  .card:hover {
+    background-color: $brandColor18;
   }
 }

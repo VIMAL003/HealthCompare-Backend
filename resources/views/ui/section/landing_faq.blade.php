@@ -1,4 +1,4 @@
-<div class="container_fluid landing-faq py-3">
+<div class="container_fluid landing-faq py-5">
   <div class="container">
     <div class="row row-cols-1">
       <div class="col">

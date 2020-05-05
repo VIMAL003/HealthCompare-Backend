@@ -34,7 +34,7 @@
       @hasSection('bottom-text-cta')
         @yield('bottom-text-cta')
       @else
-        <div class="col-12 col-lg-4 bottom-text-cta order-4 order-lg-last py-3">
+        <div class="col-12 col-lg-4 bottom-text-cta order-4 order-lg-last pb-4">
           <a href="#blank">Already got a health insurance policy? Use our hospital search to select the right hospital.</a>
         </div>
       @endif
@@ -46,7 +46,7 @@
         <div class="main-content pt-5">
           <h2>{!! $landingHero['heading']!!}</h2>
         </div>
-        <div class="checklist py-3">
+        <div class="checklist py-3 pr-5 mb-3">
           @foreach ($landingHero['checklist'] as $checklistItem)
             <img src="{{ \App\Helpers\Utils::convertAssetBaseUrl('../images/tick.svg') }}" alt="" style="float:left;">
             <p>{{$checklistItem}}</p>

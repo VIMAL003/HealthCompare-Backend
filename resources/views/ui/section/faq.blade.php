@@ -1,6 +1,6 @@
-<div class="container_fluid faq py-3">
-  <div class="container">
-    <div class="row row-cols-1">
+<div class="container_fluid faq py-5">
+  <div class="container pt-4">
+    <div class="row row-cols-1 mb-4">
       <div class="col">
         <div class="card">
           <div class="card-body">

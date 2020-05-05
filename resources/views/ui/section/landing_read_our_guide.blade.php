@@ -1,10 +1,10 @@
-<div class="container_fluid bg-brandColor1 landing-read-our-guide py-3">
-  <div class="container">
+<div class="container_fluid bg-brandColor1 landing-read-our-guide py-5">
+  <div class="container py-4">
     <div class="row row-cols-1">
       <div class="col">
         <div class="card py-lg-3 px-lg-5">
           <div class="card-body">
-            <div class="main-content mb-3 mx-auto py-3">
+            <div class="main-content mb-3 mx-auto pt-3">
               <h3>{{$landingReadOurGuide['heading']}}</h3>
               <h4>{{$landingReadOurGuide['subtitle']}}</h4>
             </div>
