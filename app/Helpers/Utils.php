@@ -522,7 +522,7 @@ class Utils
      * @return string
      */
     public static function convertAssetBaseUrl( $url, $toReplace = '../images', $replaceWith = 'images/rcd' ){
-        $returnedString = str_replace( $toReplace, $replaceWith, $url );
+        $returnedString = asset(str_replace( $toReplace, $replaceWith, $url ));
         return $returnedString;
     }
 
