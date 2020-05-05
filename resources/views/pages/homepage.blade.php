@@ -19,7 +19,7 @@
 
     @include('ui.section.header_2_columns', ['wrapperClass'=>"pb-lg-5"])
 
-    {{-- @include('ui.section.cta_banner_overflowing_image') --}}
+    @include('ui.section.cta_banner_overflowing_image')
 
     {{-- @include('ui.section.compare_online_cards') --}}
 
