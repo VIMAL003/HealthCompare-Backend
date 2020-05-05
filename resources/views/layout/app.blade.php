@@ -105,7 +105,12 @@
         {{-- Stickybits is the script for handling position sticky cross browser --}}
         <script type="text/javascript" src="{{ asset('js/stickybits.js') }}"></script>
         <script src="{{ mix('js/app.js') }}"></script>
+
         <script src="{{ mix('js/common.js') }}"></script>
+        {{-- <script src="{{ mix('js/components/search-form.js') }}"></script> --}}
+        {{-- <script src="{{ mix('js/components/compare-brokers-modal.js') }}"></script> --}}
+
+
         <script src="https://maps.googleapis.com/maps/api/js?key={{ config('services.googleApiKey') }}"
                 async defer></script>
         <script>
