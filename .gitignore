@@ -21,3 +21,4 @@ yarn.lock
 /public/mix-manifest.json
 /public/enquiries/
 /public/robots.txt
+*.zip
