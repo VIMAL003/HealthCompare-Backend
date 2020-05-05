@@ -9,6 +9,8 @@ use App\Models\BlogCategory;
 use App\Models\Faq;
 use App\Models\Hospital;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Log;
 use Jenssegers\Agent\Facades\Agent;
 
 class WebController extends BaseController
@@ -48,6 +50,20 @@ class WebController extends BaseController
         $procedures = Utils::getProceduresForDropdown();
         //Get all the FAQs from DB
         $faqs  = Faq::with('category')->get()->take(3);
+
+
+        // Get JSON files until data in DB
+        $dataPath = storage_path('app/data/');
+        foreach (glob("$dataPath*.json") as $file) {
+            if ( ! File::exists($file) ){
+                continue;
+            }
+            $fileKey = str_replace( '.json', '', basename($file));
+            $fileDecoded = json_decode(file_get_contents($file), true);
+            $this->returnedData[$fileKey] = $fileDecoded;
+
+        }
+        // Setup Data
         $this->returnedData['success']                          = true;
         $this->returnedData['data']['faqs']                     = $faqs;
         $this->returnedData['data']['dynamicKeywordText']       = $dynamicKeywordText;
