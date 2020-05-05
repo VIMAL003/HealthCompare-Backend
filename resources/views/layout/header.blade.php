@@ -9,29 +9,29 @@
           {{-- {{#embed "ui/component/menu-icon"}}
           {{/embed}} --}}
         </div>
-        <a class="navbar-brand mx-0 py-0" href="#">
-          <img src="../images/health-compare-logo.svg" width="200" alt="">
+        <a class="navbar-brand mx-0 py-0" href="{{url('/')}}">
+          <img src="{{ URL::asset('/images/rcd/health-compare-logo.svg') }}" width="200" alt="">
         </a>
         <div class="w-100 text-right  align-self-center d-lg-none">
           <button class="mobile-search" type="button">
-            <img src="../images/search-icon.svg" alt="">
+            <img src="{{ URL::asset('/images/rcd/search-icon.svg') }}" alt="">
           </button>
         </div>
       </div>
       <div id="navbarContent" class="collapse navbar-collapse closed-sidebar">
         <ul class="navbar-nav ml-auto h-100">
           <!-- Megamenu-->
-          <li class="nav-item">
+          <li class="nav-item {{ Request::is('') ? 'active' : '' }}">
             <a href="/" class="nav-link d-lg-none">Home</a>
           </li>
           <li class="nav-item dropdown megamenu">
-              {{-- @include('ui.section.megaMenuCompare') --}}
+              @include('ui.section.megaMenuCompare')
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Your Rights</a>
+          <li class="nav-item {{ Request::is('your-rights') ? 'active' : '' }}">
+            <a href="{{url('/your-rights')}}" class="nav-link">Your Rights</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">News</a>
+          <li class="nav-item {{ Request::is('news') ? 'active' : '' }}">
+            <a href="{{url('/blog')}}" class="nav-link">News</a>
           </li>
           <li class="nav-item dropdown megamenu">
               {{-- @include('ui.section.megaMenuHelp') --}}
