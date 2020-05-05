@@ -14,7 +14,7 @@
 
     @include('ui.section.landing_hero')
 
-    {{-- @include('ui.section.landing_stats_banner') --}}
+    @include('ui.section.landing_stats_banner')
 
     @include('ui.section.header_2_columns')
 
