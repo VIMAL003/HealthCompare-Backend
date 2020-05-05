@@ -18,7 +18,7 @@
 
     @include('ui.section.header_2_columns')
 
-    {{-- @include('ui.section.landing_compare_online_cards') --}}
+    @include('ui.section.landing_compare_online_cards')
 
     {{-- @include('ui.section.compare_read_our_guide') --}}
 
