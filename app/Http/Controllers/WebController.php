@@ -265,17 +265,17 @@ class WebController extends BaseController
 
     // Cookie policy
     public function cookiePage() {
-        return view('pages.cookiepage');
+        return view('pages.cookiepage', $this->returnedData);
     }
 
     // Privacy policy
     public function privacyPage() {
-        return view('pages.privacypage');
+        return view('pages.privacypage', $this->returnedData);
     }
 
     // Terms and Conditions
     public function termsAndConditionsPage() {
-        return view('pages.termsandconditionspage');
+        return view('pages.termsandconditionspage', $this->returnedData);
     }
 
     // Your rights
@@ -389,6 +389,6 @@ class WebController extends BaseController
 
     // Attributions page
     public function attributionsPage() {
-        return view('pages.attributionspage');
+        return view('pages.attributionspage', $this->returnedData);
     }
 }
