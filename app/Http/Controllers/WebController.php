@@ -9,7 +9,6 @@ use App\Models\BlogCategory;
 use App\Models\Faq;
 use App\Models\Hospital;
 use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Jenssegers\Agent\Facades\Agent;
 
@@ -53,16 +52,7 @@ class WebController extends BaseController
 
 
         // Get JSON files until data in DB
-        $dataPath = storage_path('app/data/');
-        foreach (glob("$dataPath*.json") as $file) {
-            if ( ! File::exists($file) ){
-                continue;
-            }
-            $fileKey = str_replace( '.json', '', basename($file));
-            $fileDecoded = json_decode(file_get_contents($file), true);
-            $this->returnedData[$fileKey] = $fileDecoded;
-
-        }
+        $this->returnedData = array_merge($this->returnedData, Utils::getStaticJSONData());
         // Setup Data
         $this->returnedData['success']                          = true;
         $this->returnedData['data']['faqs']                     = $faqs;
@@ -102,16 +92,7 @@ class WebController extends BaseController
             $dynamicKeywordText .= ' in '.$dynamicKeywordInsertion['location'];
 
         // Get JSON files until data in DB
-        $dataPath = storage_path('app/data/');
-        foreach (glob("$dataPath*.json") as $file) {
-            if ( ! File::exists($file) ){
-                continue;
-            }
-            $fileKey = str_replace( '.json', '', basename($file));
-            $fileDecoded = json_decode(file_get_contents($file), true);
-            $this->returnedData[$fileKey] = $fileDecoded;
-
-        }
+        $this->returnedData = array_merge($this->returnedData, Utils::getStaticJSONData());
         // Setup Data
         $this->returnedData['success']                          = true;
         $this->returnedData['data']['dynamicKeywordText']       = $dynamicKeywordText;
