@@ -528,9 +528,12 @@ class Utils
     }
 
     /**
-     * Undocumented function
+     * Retrieves and decodes json files
+     * from storage/app/data as a key/value pair
+     * where the key is the filename and
+     * value is the decoded json file k/v pair
      *
-     * @return void
+     * @return array Key Value pairs
      */
     public static function getStaticJSONData(){
         $dataPath = storage_path('app/data/');

@@ -19,6 +19,12 @@ class WebController extends BaseController
         'data'      => []
     ];
 
+    // Only needed until data is moved to db or included directly
+    // as static text
+    public function __construct(){
+        $this->returnedData = array_merge([],Utils::getStaticJSONData(), $this->returnedData);
+    }
+
     /**
      * Returns a list of Procedures ( at the moment these will be specialties because we don't have the actual list of Procedures)
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
@@ -51,8 +57,6 @@ class WebController extends BaseController
         $faqs  = Faq::with('category')->get()->take(3);
 
 
-        // Get JSON files until data in DB
-        $this->returnedData = array_merge($this->returnedData, Utils::getStaticJSONData());
         // Setup Data
         $this->returnedData['success']                          = true;
         $this->returnedData['data']['faqs']                     = $faqs;
@@ -91,8 +95,6 @@ class WebController extends BaseController
         if(!empty($dynamicKeywordInsertion['location']))
             $dynamicKeywordText .= ' in '.$dynamicKeywordInsertion['location'];
 
-        // Get JSON files until data in DB
-        $this->returnedData = array_merge($this->returnedData, Utils::getStaticJSONData());
         // Setup Data
         $this->returnedData['success']                          = true;
         $this->returnedData['data']['dynamicKeywordText']       = $dynamicKeywordText;
