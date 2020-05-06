@@ -6,6 +6,7 @@ use App\Models\Enquiry;
 use App\Models\Insurance;
 use App\Models\Procedure;
 use App\Models\Specialty;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Spatie\Sitemap\SitemapGenerator;
 
@@ -524,6 +525,26 @@ class Utils
     public static function convertAssetBaseUrl( $url, $toReplace = '../images', $replaceWith = 'images/rcd' ){
         $returnedString = asset(str_replace( $toReplace, $replaceWith, $url ));
         return $returnedString;
+    }
+
+    /**
+     * Undocumented function
+     *
+     * @return void
+     */
+    public static function getStaticJSONData(){
+        $dataPath = storage_path('app/data/');
+        $returnedData = [];
+        foreach (glob("$dataPath*.json") as $file) {
+            if ( ! File::exists($file) ){
+                continue;
+            }
+            $fileKey = str_replace( '.json', '', basename($file));
+            $fileDecoded = json_decode(file_get_contents($file), true);
+            $returnedData[$fileKey] = $fileDecoded;
+
+        }
+        return $returnedData;
     }
 
 }
