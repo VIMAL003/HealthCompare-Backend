@@ -30,8 +30,8 @@
           <li class="nav-item {{ Request::is('your-rights') ? 'active' : '' }}">
             <a href="{{url('/your-rights')}}" class="nav-link">Your Rights</a>
           </li>
-          <li class="nav-item {{ Request::is('news') ? 'active' : '' }}">
-            <a href="{{url('/blog')}}" class="nav-link">News</a>
+          <li class="nav-item {{ Request::is('blogs') ? 'active' : '' }}">
+            <a href="{{url('/blogs')}}" class="nav-link">News</a>
           </li>
           <li class="nav-item dropdown megamenu">
               @include('ui.section.mega_menu_help')
