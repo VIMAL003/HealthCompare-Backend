@@ -4,7 +4,7 @@
     <div class="container px-0 px-lg-3">
       <div class="row py-0 py-lg-5">
         <div class="col-12 col-lg-3 d-none d-lg-block context-image">
-          <img src="{{ asset( \App\Helpers\Utils::convertAssetBaseUrl($megaMenuCompare['imgUrl']) ) }}" alt="" class="img-fluid">
+          <img src="{{ \App\Helpers\Utils::convertAssetBaseUrl($megaMenuCompare['imgUrl']) }}" alt="" class="img-fluid">
         </div>
         <div class="col-12 col-lg-3 d-none d-lg-block context-content">
           <h4>{{$megaMenuCompare['slogan']}}</h4>
@@ -15,7 +15,7 @@
           <ul class="list">
             @foreach ($megaMenuCompare['lists'][0] as $listItem)
               <li>
-                <img src="{{ asset( \App\Helpers\Utils::convertAssetBaseUrl($listItem['iconUrl']) ) }}" alt="">
+                <img src="{{ \App\Helpers\Utils::convertAssetBaseUrl($listItem['iconUrl']) }}" alt="">
                 <a href="{{$listItem['permalink']}}">{{$listItem['heading']}}</a>
               </li>
             @endforeach
