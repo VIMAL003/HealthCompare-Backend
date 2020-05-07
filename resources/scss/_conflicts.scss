@@ -34,3 +34,31 @@ footer{
         font-family: sofia-pro!important;
     }
 }
+
+
+.SofiaPro{
+    &-UltraLightitalic,
+    &-Bold,
+    &-Bolditalic,
+    &-ExtraLight,
+    &-Blackitalic,
+    &-Black,
+    &-Light,
+    &-Medium,
+    &-Lightitalic,
+    &-ExtraLightitalic,
+    &-Regular,
+    &-Mediumitalic,
+    &-SemiBold,
+    &-Regularitalic,
+    &-UltraLight,
+    &-SemiBolditalic {
+        font-family: sofia-pro;
+    }
+}
+.font-semibold {
+    font-family: sofia-pro;
+}
+
+
+
