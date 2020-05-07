@@ -6,7 +6,7 @@
 
 // jquery, popper, Cookies imported through webpack.mix.js
 // VENDOR
-// import 'bootstrap';                                         // Required for bootstrap tooltips
+import 'bootstrap';                                         // Required for bootstrap tooltips
 import 'bootstrap/js/dist/popover';
 // import 'bootstrap/js/dist/tooltip';
 import 'bootstrap/js/dist/carousel';
