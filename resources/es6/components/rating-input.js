@@ -1,18 +1,21 @@
 const shown = false
 
 const rating_elem = document.querySelector('ul.rating')
-const rating_input_elem = document.querySelector('input[name="rating"]')
 
-const rating_star_elems = rating_elem.querySelectorAll('li.star')
+if ( rating_elem ){
 
-rating_star_elems.forEach( (rating_star_elem, index)=>{
-  rating_star_elem.addEventListener('click', (e)=>{
-    ratingStarClickHandler(e, index)
+  const rating_star_elems = rating_elem.querySelectorAll('li.star')
+
+  rating_star_elems.forEach( (rating_star_elem, index)=>{
+    rating_star_elem.addEventListener('click', (e)=>{
+      ratingStarClickHandler(e, index)
+    })
   })
-})
 
+}
 function ratingStarClickHandler(e,active_index){
   if ( shown ) return false;
+  const rating_input_elem = document.querySelector('input[name="rating"]')
   // add filled to all < = index
   rating_star_elems.forEach( (rating_star_elem, star_index) => {
     const toggle_filled = star_index <= active_index

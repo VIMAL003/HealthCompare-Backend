@@ -4,36 +4,40 @@ import 'bootstrap/js/dist/collapse'
 
 let clickBuffered = true
 const clickBufferTime = 750
-$('#navbarContent').collapse({
-  toggle: false
-})
 
-$('#navbarContent').on('show.bs.collapse', function () {
-  document.querySelector('#navbarContent').classList.replace('closed-sidebar','opening-sidebar')
-})
-$('#navbarContent').on('shown.bs.collapse', function () {
-  document.querySelector('#navbarContent').classList.replace('opening-sidebar','open-sidebar')
-})
-$('#navbarContent').on('hide.bs.collapse', function () {
-  document.querySelector('#navbarContent').classList.replace('open-sidebar','closing-sidebar')
-})
-$('#navbarContent').on('hidden.bs.collapse', function () {
-  document.querySelector('#navbarContent').classList.replace('closing-sidebar','closed-sidebar')
-})
+if ( document.querySelector('#navbarContent') ){
 
-$('#menuIcon').click(function(){
-	if ( clickBuffered ){
-		clickBuffered = false
+	$('#navbarContent').collapse({
+		toggle: false
+	})
 
-		$(this).toggleClass('open')
+	$('#navbarContent').on('show.bs.collapse', function () {
+		document.querySelector('#navbarContent').classList.replace('closed-sidebar','opening-sidebar')
+	})
+	$('#navbarContent').on('shown.bs.collapse', function () {
+		document.querySelector('#navbarContent').classList.replace('opening-sidebar','open-sidebar')
+	})
+	$('#navbarContent').on('hide.bs.collapse', function () {
+		document.querySelector('#navbarContent').classList.replace('open-sidebar','closing-sidebar')
+	})
+	$('#navbarContent').on('hidden.bs.collapse', function () {
+		document.querySelector('#navbarContent').classList.replace('closing-sidebar','closed-sidebar')
+	})
 
-		document.querySelector('main').classList.toggle('sidebar-active')
+	$('#menuIcon').click(function(){
+		if ( clickBuffered ){
+			clickBuffered = false
 
-		$('#navbarContent').collapse('toggle')
+			$(this).toggleClass('open')
 
-		setTimeout(()=>{
-			clickBuffered = true
-		}, clickBufferTime)
+			document.querySelector('main').classList.toggle('sidebar-active')
 
-	}
-})
+			$('#navbarContent').collapse('toggle')
+
+			setTimeout(()=>{
+				clickBuffered = true
+			}, clickBufferTime)
+
+		}
+	})
+}
