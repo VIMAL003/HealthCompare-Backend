@@ -75,6 +75,18 @@ header {
         a.nav-link {
           color: $brandColor1;
           margin-left: 1rem;
+          // &.dropdown-toggle::after{
+          //   content: "";
+          //   border: unset;
+          //   background-image: url(/images/icons/chevron-down.svg);
+          //   background-position: center;
+          //   position: absolute;
+          //   background-size: contain;
+          //   width: 16px;
+          //   margin-top: 2px;
+          //   height: 16px;
+          //   background-repeat: no-repeat;
+          // }
         }
 
 
