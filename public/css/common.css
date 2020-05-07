@@ -618,6 +618,14 @@ footer a {
   font-family: sofia-pro !important;
 }
 
+.SofiaPro-UltraLightitalic, .SofiaPro-Bold, .SofiaPro-Bolditalic, .SofiaPro-ExtraLight, .SofiaPro-Blackitalic, .SofiaPro-Black, .SofiaPro-Light, .SofiaPro-Medium, .SofiaPro-Lightitalic, .SofiaPro-ExtraLightitalic, .SofiaPro-Regular, .SofiaPro-Mediumitalic, .SofiaPro-SemiBold, .SofiaPro-Regularitalic, .SofiaPro-UltraLight, .SofiaPro-SemiBolditalic {
+  font-family: sofia-pro;
+}
+
+.font-semibold {
+  font-family: sofia-pro;
+}
+
 /* CSS Document */
 /* Landing Oage */
 .landing-read-our-guide .card .guide-content ul {
