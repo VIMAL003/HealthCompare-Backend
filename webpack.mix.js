@@ -68,7 +68,10 @@ mix.options({
 
 // Reload browser when something changes
 mix.browserSync({
+    host: '192.168.10.10',
+    open: false,
     injectChanges: true,
+    proxy: 'hcstaging.test' || process.env.APP_URL,
     files: [
         'resources/scss/**/*.scss',
         'resources/sass/**/*.scss',
@@ -78,7 +81,6 @@ mix.browserSync({
         'public/images/**/*'
     ],
     logSnippet: true,
-    proxy: process.env.APP_URL,
     port: 8080,
     ghostMode: false
 })
