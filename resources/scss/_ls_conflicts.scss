@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Landing Oage */
+
+.landing-read-our-guide .card .guide-content ul {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 2rem;
+    list-style-type: disc;
+}
+
+
+/* Add new css */
+
+.card-body h4,
+.card-body h5 {
+	margin-bottom: .5rem;
+}
+
+
+
+/* Global */
+body {
+    margin: 0;
+    font-family: "SofiaPro-Regular", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #1b1b1b;
+    text-align: left;
+    background-color: #fff;
+}
+
+header a.nav-link.dropdown-toggle::after {
+    content: "";
+    border: unset;
+    background-image: url(/images/icons/chevron-down.svg);
+    background-position: center;
+    position: absolute;
+    background-size: contain;
+    width: 8px;
+    margin-top: 9px;
+    height: 8px;
+    background-repeat: no-repeat;
+}
+
+/* Note: Change arrow to blue */
+
+
+/* add */
+
+/* Line 406 _reboot.scss */
+header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu {
+    position: static;
+    font-size: 1rem;
+}
+
+/* Line 326 common.scss */
+header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu h4 {
+    color: #037098;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Line 469 _reboot.scss */
+header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem !important;
+}
+
+
+/* Change */
+
+header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu.mega-menu-compare .list-1 ul.list li img, header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu.mega-menu-compare .list-2 ul.list li img {
+    width: 1.5rem;
+    height: 1.6rem;
+}
+
+
+/* Home */
+
+/* Cards */
+// -- Link the whole of the Health Insurance Card to landing page
+
+/* Alert */
+.alert-dismissible .close {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  padding: 0.75rem 1.25rem;
+  color: inherit;
+  }
