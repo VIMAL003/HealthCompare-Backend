@@ -21,7 +21,15 @@ mix.webpackConfig({
             $: "jquery",
             jQuery: "jquery",
             Cookies: "js-cookie",
-            Popper: "popper"
+            Popper: ['popper.js', 'default'],
+
+            Carousel: 'exports-loader?Carousel!bootstrap/js/dist/carousel',
+            Collapse: 'exports-loader?Collapse!bootstrap/js/dist/collapse',
+            Popover: 'exports-loader?Popover!bootstrap/js/dist/popover',
+            Tooltip: 'exports-loader?Tooltip!bootstrap/js/dist/tooltip',
+            Modal: 'exports-loader?Modal!bootstrap/js/dist/modal',
+
+
         })
     ],
 });
@@ -32,6 +40,10 @@ mix.copyDirectory('resources/video', 'public/video');
 mix.copyDirectory('resources/fonts', 'public/fonts');
 mix.copyDirectory('resources/downloads', 'public/downloads');
 mix.copy('node_modules/stickybits/dist/stickybits.min.js', 'public/js/stickybits.js');
+
+mix.copyDirectory('node_modules/slick-carousel/slick/', 'public/slick');
+// mix.copyDirectory('node_modules/slick-carousel/slick/fonts/', 'public/slick/fonts');
+// mix.copy('node_modules/slick-carousel/slick/slick.js', 'public/slick/slick.js');
 
 mix.options({
     autoprefixer: false,

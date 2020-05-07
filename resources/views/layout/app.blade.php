@@ -113,7 +113,7 @@
 
         {{-- Stickybits is the script for handling position sticky cross browser --}}
         <script type="text/javascript" src="{{ asset('js/stickybits.js') }}"></script>
-        {{-- <script src="{{ mix('js/app.js') }}"></script> --}}
+        <script src="{{ mix('js/app.js') }}"></script>
 
         <script src="{{ mix('js/common.js') }}"></script>
         {{-- <script src="{{ mix('js/components/search-form.js') }}"></script> --}}

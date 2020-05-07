@@ -1,5 +1,5 @@
-import './jquery'
-import 'bootstrap'
+// import './jquery'
+// import 'bootstrap'
 
 import './components/menu-icon.js'
 import './components/search-works-slider.js'

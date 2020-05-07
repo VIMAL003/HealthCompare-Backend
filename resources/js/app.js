@@ -6,8 +6,17 @@
 
 // jquery, popper, Cookies imported through webpack.mix.js
 // VENDOR
-import 'bootstrap';                                         // Required for bootstrap tooltips
-import 'bootstrap-select';                                  // Searchable dropdowns
+// import 'bootstrap';                                         // Required for bootstrap tooltips
+import 'bootstrap/js/dist/popover';
+// import 'bootstrap/js/dist/tooltip';
+import 'bootstrap/js/dist/carousel';
+import 'bootstrap/js/dist/modal';
+
+
+// require('bootstrap-select/js/bootstrap-select');                                  // Searchable dropdowns
+import 'bootstrap-select/dist/js/bootstrap-select';                                  // Searchable dropdowns
+$.fn.selectpicker.Constructor.BootstrapVersion = '4';
+
 import 'cookieconsent';                                     // Cookie consent plugin
 
 import 'jquery-validation/dist/additional-methods.min';     // Plugin for jquery validate

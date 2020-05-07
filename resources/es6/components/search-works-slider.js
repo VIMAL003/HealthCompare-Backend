@@ -1,5 +1,5 @@
 // import $ from 'jquery';
-import 'slick-carousel';
+import 'slick-carousel/slick/slick';
 
 const $slick_slider = $(".slick-slider.search-works")
 const settings = {

@@ -1,5 +1,6 @@
 // import $ from 'jquery'
 // import 'bootstrap'
+import 'bootstrap/js/dist/collapse'
 
 let clickBuffered = true
 const clickBufferTime = 750
