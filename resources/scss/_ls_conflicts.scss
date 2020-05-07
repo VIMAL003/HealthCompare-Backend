@@ -33,16 +33,16 @@ body {
 }
 
 header a.nav-link.dropdown-toggle::after {
-  content: "";
-  border: unset;
-  background-image: url(/images/icons/chevron-down.svg);
-  background-position: center;
-  position: relative;
-  background-size: contain;
-  width: 8px;
-  top: 3px;
-  height: 8px;
-  background-repeat: no-repeat;
+    content: "";
+    border: unset;
+    background-image: url(/images/icons/chevron-down.svg);
+    background-position: center;
+    position: relative;
+    background-size: contain;
+    width: 8px;
+    top: 3px;
+    height: 8px;
+    background-repeat: no-repeat;
 }
 
 /* Note: Change arrow to blue */
@@ -112,4 +112,28 @@ header #navbarContent>ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu
     .container {
         max-width: 1200px;
     }
+}
+
+
+
+#compareBrokersModal .modal-content .modal-body ul.provider-list li .provider-actions .btn {
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+    text-align: center;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#compareBrokersModal .modal-content .modal-body ul.provider-list li .provider-actions svg {
+    width: 1rem;
+    height: 1.5rem;
+    position: relative;
+    margin-right: .5rem;
+}
+
+
+body {
+    color: #757575;
 }
