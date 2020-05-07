@@ -1,2 +1,7 @@
-@import '../../node_modules/slick-carousel/slick/slick.css';
-@import '../../node_modules/slick-carousel/slick/slick-theme.css';
+// @import '../../node_modules/slick-carousel/slick/slick.css';
+// @import '../../node_modules/slick-carousel/slick/slick-theme.css';
+
+$slick-font-path: "../slick/fonts/";
+$slick-loader-path: "../slick/";
+
+@import '../../../node_modules/slick-carousel/slick/slick', '../../../node_modules/slick-carousel/slick/slick-theme';
