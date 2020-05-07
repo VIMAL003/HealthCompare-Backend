@@ -1,10 +1,5 @@
 @import 'component/menu-icon';
 
-// For conflicts
-header .dropdown-toggle{
-  border:none;
-}
-
 main {
   &.sidebar-active {
     position: relative;
