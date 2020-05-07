@@ -1,8 +1,10 @@
 const shown = false
 
+const is_live = false
+
 const rating_elem = document.querySelector('ul.rating')
 
-if ( rating_elem ){
+if ( rating_elem && is_live ){
 
   const rating_star_elems = rating_elem.querySelectorAll('li.star')
 
