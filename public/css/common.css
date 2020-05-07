@@ -626,6 +626,10 @@ footer a {
   font-family: sofia-pro;
 }
 
+.bootstrap-select.big .dropdown-toggle {
+  font-family: sofia-pro;
+}
+
 /* CSS Document */
 /* Landing Oage */
 .landing-read-our-guide .card .guide-content ul {
@@ -744,6 +748,28 @@ header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-me
   height: 1.5rem;
   position: relative;
   margin-right: 0.5rem;
+}
+
+.SofiaPro-SemiBold,
+.modal.modal-tour #slide_number,
+.pagination .page-item .page-link,
+.mobile-pagination-wrap,
+.corporate-content-section-2 .rating-name,
+.results-page-mobile #resultspage_form label {
+  font-family: sofia-pro;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.SofiaPro-SemiBold,
+.modal.modal-tour #slide_number,
+.pagination .page-item .page-link,
+.mobile-pagination-wrap,
+.corporate-content-section-2 .rating-name,
+.results-page-mobile #resultspage_form label {
+  font-family: sofia-pro;
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
@@ -884,15 +910,20 @@ p {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  .home-hero .home-search .search-form .form-control {
+  .home-hero .home-search .search-form .form-control,
+.home-hero .home-search .search-form button.dropdown-toggle {
     height: -webkit-calc(2.8em + .75rem + 2px);
     height: calc(2.8em + .75rem + 2px);
+    border: none;
   }
   .home-hero .home-search .search-form .custom-select {
     height: -webkit-calc(2.8em + .75rem + 2px);
     height: calc(2.8em + .75rem + 2px);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+  }
+  .home-hero .home-search .search-form button[type=submit] {
+    height: 100%;
   }
 }
 .home-hero .did-you-know h3 {
@@ -1496,15 +1527,20 @@ p {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  .search-form .form-control {
+  .search-form .form-control,
+.search-form button.dropdown-toggle {
     height: -webkit-calc(2.8em + .75rem + 2px);
     height: calc(2.8em + .75rem + 2px);
+    border: none;
   }
   .search-form .custom-select {
     height: -webkit-calc(2.8em + .75rem + 2px);
     height: calc(2.8em + .75rem + 2px);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+  }
+  .search-form button[type=submit] {
+    height: 100%;
   }
 }
 /* Slider */
