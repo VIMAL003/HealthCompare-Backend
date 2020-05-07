@@ -10650,7 +10650,7 @@ a.close.disabled {
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 0;
+  padding: 1rem;
 }
 
 .modal-footer {
@@ -10669,7 +10669,7 @@ a.close.disabled {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: -0.25rem;
+  padding: 0.75rem;
   border-top: 0 solid #dee2e6;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;

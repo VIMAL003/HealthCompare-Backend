@@ -1,0 +1,1320 @@
+/* 
+    goco-quote-responsive.css
+    Gocompare.com / Quote styles - Responsive
+    ---
+    Julien Decaudin @ Gocompare Web Team
+    06/2015
+
+    SUMMARY
+    ---
+    /*--------------------------------------------------=> UP TO DESKTOP: 1040px */
+    /*--------------------------------------------------=> UP TO SMALL DESKTOP: 960px */
+    /*--------------------------------------------------=> UP TO TABLET: 910px */
+    /*--------------------------------------------------=> UP TO SMALL TABLET: 820px */
+    /*--------------------------------------------------=> UP TO LANDSCAPE PHONE: 640px */
+    /*--------------------------------------------------=> UP TO LARGE PORTRAIT PHONE: 560px */
+    /*--------------------------------------------------=> UP TO SMALL PORTRAIT PHONE: 360px */
+    /*--------------------------------------------------=> Hi-Res */
+/**/
+
+/*--------------------------------------------------=> UP TO DESKTOP: 1040px */
+@media screen and (max-width: 1040px) {    
+    /*============================== MASTER LAYOUT */
+    .quote header{                      
+		height: 100px;
+		background-position: 100% 80px;        
+    }
+
+    .quote header .content-holder{  
+        width: 100%;      
+		height: 100px;  
+		background-position: -85px bottom;             
+    } 
+
+    /*============================== CONTENT */
+    .quote h1.logo{
+        padding-top: 0px;
+    }
+
+    .quote h1.logo,
+    .quote h1.logo img{
+        width: 250px;
+        height: 100px;        
+    }
+
+    /*.quote h1.logo img{        
+        background-size: 250px 100px;
+    }*/
+
+    /*============================== NAVIGATION */
+    .progress-container{
+        width: 100%;
+    }
+
+    .progress-container ul{
+		float: right;
+        width: 90%;
+		padding-left: 300px;
+		margin-right: 130px;
+    }
+
+    .progress-container li{
+        width: 20%;
+    }
+	
+	.progress-container .signpost{
+		position: absolute;
+		float: none;
+		bottom: 0px;
+		right: 0;
+	}
+
+    /*------------ QUOTE PROGRESS */
+    .quote-progress ul{
+        padding-left: 300px;
+    }
+
+    .quote-progress li .label {
+        display: none;
+    }
+
+    .quote-progress li .signpost {
+        width: 40px;
+        height: 40px;     
+        padding-top: 1px;
+    }
+
+    .quote-progress li .signpost:after{
+        width: 29px;
+    }
+
+    .quote-progress li .index,
+    .quote-progress li .product-icon{
+        padding-top: 7px;
+    }
+}
+
+/*--------------------------------------------------=> UP TO SMALL TABLET: 820px */
+@media screen and (max-width: 820px) {
+    /*============================== NAVIGATION */
+	.progress-container{
+		bottom: -25px;
+	}
+	
+    .progress-container ul{
+		margin-right: 120px;
+    }
+	
+    .progress-container li{
+		height: 94px;
+    }
+	
+	.progress-container li:before{
+		width: 30px;
+		height: 44px;
+		background-size: 136px 163px;
+		background-position: 0px -54px;
+	}
+	
+	.progress-container li:after{
+		width: 51px;
+		height: 24px;
+		top: 65px;
+		left: 25px;
+		background-size: 136px 163px;
+		background-position: -41px 0px;		
+	}
+	
+	.progress-container li.selected:before{
+		width: 37px;
+		height: 54px;
+		background-position: 0px -109px;
+	}
+	
+    .progress-container li span{
+		width: 30px;
+		left: 38px;
+		top: 35px;
+		font-size: 16px;		
+    }
+	
+    .progress-container li.selected span{
+		width: 37px;
+		left: 34px;
+		top: 21px;
+		font-size: 20px;		
+    }
+	
+	.progress-container .signpost{
+		width: 111px;
+		height: 94px;
+	}
+	
+	.progress-container .signpost:before{		
+		width: 87px;
+		height: 63px;				
+		background-size: 136px 163px;
+		background-position: -41px -41px;		
+	}
+	
+	.progress-container .signpost span{
+		width: 87px;
+		top: 30px;
+		left: 13px;
+		font-size: 11px;
+	}
+}
+
+/*--------------------------------------------------=> UP TO LANDSCAPE PHONE: 640px */
+@media screen and (max-width: 640px) {
+    /*============================== MASTER LAYOUT */
+    /*------------ HEADER */
+    .quote header{        
+        height: auto;         
+    }
+
+    .quote header .content-holder{        
+        position: relative;
+        height: auto; 
+        background: url(../img/progress-hills-m.png) no-repeat right bottom;      
+    } 
+    
+    .quote.alt header .content-holder{              
+        background-image: url(../img/progress-hills-m-alt.png);      
+    }    
+
+    /*============================== CONTENT */     
+    .quote h1.logo{        
+        font-size: 14px;
+    }
+
+    .quote h1.logo,
+    .quote h1.logo img{              
+        width: 230px;
+        height: 77px;             
+    }
+
+    .quote h1.logo img {
+        width: 140px;
+        height: 24px;
+        margin-top: 13px;
+        background-size: 140px 24px;
+    }
+
+        .quote h1.logo span {
+            bottom: 25px;
+        }
+
+    /*============================== FORMS */
+    /*------------ FIELDSET & QUESTION */
+    /* Fieldset */
+    fieldset{
+        width: auto;
+        padding: 0 20px 0 0;
+        margin: 15px 0 30px 0;           
+    }
+
+    fieldset legend{ 
+        position: relative;   
+        width: 100%; 
+        padding: 0 0 5px 0px;
+        margin: 0 0 15px 20px; 
+        font-size: 1.125em; /* 18px */
+        line-height: 22px;
+        border: none;
+    }
+
+    fieldset legend:after{
+        position: absolute;
+        content: '';
+        width: 100%;
+        left: -20px;
+        bottom: 0;
+        border-bottom: 1px solid #777777;
+    }
+
+    /* Form Nav */    
+    form nav .button{
+        margin-right: 14px;
+    }
+
+    /* Question group */
+    .question-group{
+        float: none;      
+        padding-top: 0;  
+        margin-right: 0px;        
+    }
+    .question-group.right{
+        margin-left: 0px;        
+    }
+    .question-group.no-reg-number{
+        padding-top: 10px;
+    }
+
+    p.question-choice{
+        float: none;
+        width: 180px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    /* Question */
+    .question{           
+        position: relative;
+        width: auto;
+        padding: 20px 0 25px 0; 
+        margin-left: 20px;
+        border-left: none;      
+        border-right: none;      
+    }
+
+    .question:before{
+        border-top: 1px solid transparent;
+    }
+
+    .question.first {
+        padding-top: 5px;
+    }
+
+    .question.active{
+        width: auto;
+        background: transparent; 
+        border: 1px solid transparent;  
+        border-left: none;      
+        border-right: none; 
+        border-top-color: #c6c6c6;        
+        padding-bottom: 25px;
+    }    
+
+    .question.active .field-validation,
+    .question.last.active .field-validation{
+        bottom: 6px;
+    }
+
+    .question.first.active{
+        border-top-color: transparent;
+    }
+    
+    .question.question-next{
+        border-top: 1px solid #c6c6c6;
+    }
+
+    .question.last.active{
+        padding-bottom: 25px;
+    }
+    .question.last.complete.active:before,
+    .question.last.error.active:before{
+        border-top: none;
+    }
+
+    label.question-label{
+        padding: 0 35px 15px 0;        
+        font-family: 'SourceSansProBold', 'Calibri', 'Arial', sans-serif;  
+        font-size: 0.875em; /* 14px */
+        line-height: 18px;
+        font-weight: 700;
+    }
+
+    /* tooltip */
+    .question .tooltip-link {
+        position: absolute;
+        top: 8px;
+        right: -15px;
+    }  
+
+    .question.first .tooltip-link {        
+        top: -5px;        
+    }           
+
+    .question .tooltip{	    
+        position: absolute;        
+        top: 8px;
+        right: -20px;        
+    }
+
+    .question.active .tooltip{	    
+        display: none;
+    }  
+    .question .tooltip.opened{	    
+        display: block !important;
+    }   
+    .question .tooltip.closed{	    
+        display: none !important;
+    }   
+
+    .question.first .tooltip{	            
+        top: -5px;        
+    }        
+
+    /* Validation message */
+    .field-validation{                    
+        font-size: 0.875em; /* 14px */      
+        line-height: 18px;
+        left: 27px;
+        bottom: 6px;
+    }
+
+    .field-validation.error:before{        
+        
+    }
+
+    .field-validation.error:after {        
+        
+    }
+
+    /* Question extended */
+    .question-extended{        
+        width: 100%;                
+        margin-top: 1px;
+        padding-right: 20px;
+        border-left: none;
+        border-right: none;
+        -webkit-box-sizing: content-box; 
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+
+    .question-extended:before{
+        left: 19px;
+    }
+
+    .question-extended:after{
+        left: 20px;
+    }
+
+    .question-extended .question{
+        width: auto;        
+    }
+
+    .question-extended.question-next{
+        border-top: 1px solid #c6c6c6;
+    }
+
+    .question-extended .content-holder{
+        padding-bottom: 10px;     
+    }
+
+    .question-extended .content-holder > h2{
+        font-family: 'SourceSansProSemiBold', 'Calibri', 'Arial', sans-serif;  
+        font-size: 0.875em; /* 14px */
+        font-weight: 600;
+        line-height: 18px;        
+        padding: 0 20px 5px 0;
+        margin: 0 -20px 16px 0;        
+    }
+
+    .question-extended .content-holder > p{
+        font-size: 0.875em; /* 14px */
+        line-height: 18px;  
+    }
+
+    .question-extended fieldset{
+        width: calc(100% + 20px);
+    }
+
+    .question-extended fieldset .question{
+        padding-right: 50px;
+    }
+
+    .question-extended fieldset .question .tooltip-link{
+        right: 5px;
+    }
+
+    .question-extended fieldset .question .tooltip{
+        width: calc(100% + 10px);
+        right: 0px;
+    }
+
+    .question-extended fieldset .question .tooltip{
+        right: 0px;
+    }
+
+    .question-extended .footer {
+        padding-left: 20px;
+    }
+
+    /*------------ TEXT INPUT */
+    /* Medium, large & extra large */
+    .input-text.medium,    
+    .input-text.large,
+    .input-text.xlarge{
+        width: 80%;
+    }
+
+    .input-date-holder .answer-radio-list li{    
+        width: 120px;
+        height: 40px;
+    }
+
+    .input-date-holder .answer-radio-list li label{    
+        width: 120px;
+        height: 35px;
+    }
+
+    /*------------ DROPDOWN */
+    /* SelectBox Dropdown replacement */
+    .selectBox-dropdown {
+        width: 80% !important;
+    }    
+
+    /*------------ MULTI SELECT LIST */
+    .multi-select-list{
+        width: 100%; 
+        height: 350px;       
+        border-left: none;        
+        border-right: none;
+    }
+
+    .multi-select-list li a {
+        border-right: none;        
+    }
+
+    /*------------ ANSWER BUTTON */
+    .answer-radio-list li{        
+        width: 120px;
+        height: 75px;                      
+    }
+        
+    .answer-radio-list li label {        
+        width: 120px;
+        height: 70px;                      
+    }
+
+    .answer-radio-list li label span{        
+        padding-left: 10px;       
+        padding-right: 10px;
+    }
+
+    /*------------ ANSWER IMAGE BUTTON */
+    .answer-radio-list.image{
+        width: 296px;
+        margin-left: -16px;
+    }
+
+    .answer-radio-list.image li{     
+        width: 130px;   
+        height: 160px;       
+        margin-left: 16px;
+        margin-right: 0;              
+    }
+
+    .answer-radio-list.image li label{                
+        height: 155px;
+        font-size: 12px;        
+    }
+
+    .answer-radio-list.image li label img{                   
+        padding: 5px 5px 0 5px;    
+    }
+
+    .answer-radio-list.image li label span.text span {
+        padding: 0 5px;
+    } 
+
+    /*------------ NUMBER PICKER */
+    .number-picker-list{
+        width: 230px;
+    }
+
+    .number-picker-list li div:first-child,
+    .number-picker-list li div:first-child label{
+        -webkit-border-top-left-radius: 3px;        
+        -webkit-border-bottom-left-radius: 3px;
+        -moz-border-radius-topleft: 3px;    
+        -moz-border-radius-bottomleft: 3px;
+        border-top-left-radius: 3px;    
+        border-bottom-left-radius: 3px;  
+    }
+
+    .number-picker-list li div.last,
+    .number-picker-list li div.last label{    
+        border-right: 1px solid #c6c6c6;
+        -webkit-border-top-right-radius: 3px;        
+        -webkit-border-bottom-right-radius: 3px;
+        -moz-border-radius-topright: 3px;    
+        -moz-border-radius-bottomright: 3px;
+        border-top-right-radius: 3px;    
+        border-bottom-right-radius: 3px;  
+    }
+
+    .number-picker-list li div.last input:checked + label{
+        border-right-color: #259a30;
+    }
+
+    .number-picker-list li div.last input:checked + label:hover,
+    .number-picker-list li div.last input:checked:focus + label {
+        border-right-color: #008014;
+    }
+
+    .number-picker-list li div.last input:checked + label:active{
+        border-right-color: #006600;
+    }
+
+    /*------------ SORT TAB */    
+    .sort-tab-list li{        
+        width: 99px;
+        height: 60px;        
+    }
+
+    .sort-tab-list li.active{
+        width: 100px;    
+    }
+
+    .sort-tab-list li.active.last{
+        width: 99px;    
+    }
+
+    .sort-tab-list li.active a.tab,
+    .sort-tab-list li.active + li,
+    .sort-tab-list li.active + li a.tab{
+        width: 98px;    
+    }
+
+    .sort-tab-list a.tab {
+        width: 98px;
+        height: 53px; 
+    }
+
+    .sort-tab-list a.tab span.main-text:after{        
+        display: inline-block;
+        position: absolute;        
+        margin-left: 0;        
+        top: auto;
+        bottom: 8px;
+        left: 50%;
+        margin-left: -5px;        
+    }
+
+    .sort-tab-list a.tab span.summary-text{        
+        padding-bottom: 14px;
+        font-size: 0.857em; /* 12px */
+        line-height: 11px;        
+    }
+
+    /*============================== NAVIGATION */
+    /*------------ TOOLBAR */
+    .quote .header-toolbar{
+        display: none;
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        right: auto;        
+        padding: 0;
+        background: #333333;
+        border-bottom: 1px solid #231f20;
+    }
+
+    .quote .header-toolbar.open {
+        display: block;        
+    }
+
+    .quote .header-toolbar ul{
+        display: block;
+        float: none;
+    }
+
+    .quote .header-toolbar li{
+        float: none;
+        display: block;
+        position: relative;
+    }
+
+    .quote .header-toolbar li a{
+        position: relative;
+        display: block;
+        width: auto;
+        height: auto;
+        right: auto;
+        color: #fff;
+        font-family: 'SourceSansProBold', 'Calibri', 'Arial', sans-serif; 
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 15px 10px 15px 23px;
+        text-indent: 0;
+    }
+
+    .quote .header-toolbar li a:before {
+        left: 0;
+    }
+
+    .quote .header-toolbar li.account a:before {        
+        background-position: 0px -16px;
+        top: 6px;
+        left: 0;
+        margin-left: 0;
+    }
+    
+    .quote .account-container {        
+        padding: 10px 20px 0 20px;
+    }    
+
+    .quote .session-container {
+        display: block;
+        float: none;    
+        padding: 0 20px 5px 20px;
+    }
+
+    .quote .session-container li.sign-out a:before{        
+        background-position: -48px 0px;        
+    }
+
+    .quote .account-container li:after,
+    .quote .session-container li:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        top: 0;
+        left: 0;
+        background: #ffffff;
+        font-size: 0;
+    }
+
+    .quote .account-container li.quotes a:before {
+        top: 18px;
+    }
+
+    .quote .account-container li.account a:before {
+        top: 15px;
+    }
+
+    .quote .session-container li.sign-out a:before {
+        top: 17px;
+    }
+
+    /*------------ BREADCRUMB */
+    .progress-container{  
+        width: 80px;
+        height: 64px;
+		bottom: -35px;      
+    }
+	
+	.progress-container ul{
+		padding: 0;
+		margin: 0;
+	}
+
+    .progress-container ul,
+    .progress-container li{    
+        float: none;        
+    }
+
+    .progress-container li,
+    .progress-container li:before,
+    .progress-container li:after,
+    .progress-container li span,
+    .progress-container .signpost {        
+        display: none;
+    }
+    
+    .progress-container:before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 36px;
+        height: 54px;
+        top: 0px;
+        left: 24px;
+        background: url(../img/progress-signposts-m.png) no-repeat 0 0px;
+        z-index: 10;
+    }
+
+    .progress-container li.selected{
+        display: block;
+        width: auto;
+        height: auto;    
+    }
+
+    .progress-container li.selected:after{
+        display: none;
+    }
+
+    .progress-container li.selected span {
+        display: block;
+        position: absolute;
+        width: 16px;
+        left: 24px;
+        top: 6px;
+        color: #fff;
+        font-family: 'SourceSansProBold', 'Calibri', 'Arial narrow', sans-serif;  
+        font-size: 1.125em; /* 18px */
+        font-weight: 700;
+        line-height: 22px;
+        text-align: right;
+        z-index: 20;
+    }
+
+    .progress-container li.last{
+        display: block;
+        width: auto;
+        height: auto;    
+    }
+
+    .progress-container li.last span {
+        display: block;
+        position: absolute;
+        width: 19px;
+        left: 40px;
+        top: 9px;
+        color: #fff;
+        font-family: 'SourceSansProBold', 'Calibri', 'Arial narrow', sans-serif;  
+        font-size: 0.875em; /* 14px */
+        font-weight: 700;
+        line-height: 18px;
+        text-align: left;
+        z-index: 20;
+    }
+
+    .progress-container li.last span:before{
+        content: '/';
+    }
+
+    .progress-container:after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 48px;
+        height: 22px;
+        bottom: 0px;
+        left: 11px;
+        background: url(../img/progress-signposts-m.png) no-repeat -48px 0px;
+        z-index: 20;
+    }      
+    
+    /*------------ QUOTE PROGRESS */
+    .quote-progress{        
+        bottom: -10px;        
+    }
+
+    .quote-progress ul{            
+        padding: 0;
+    }
+
+    .quote-progress li {
+        display: none;
+    }
+    
+    .quote-progress li.current{
+        display: inline-block;
+        width: 70px;
+        z-index: 10;
+    }	
+    
+    .quote-progress li.current .index{
+        padding: 6px 12px 0 0;
+    }	      
+
+    .quote-progress li.last-index{
+        position: absolute;
+        display: inline-block;
+        width: 70px;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+    }
+
+    .quote-progress li.last-index .signpost{
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        font-size: 0.875em; /* 14px */
+    }
+
+    .quote-progress li.last-index .signpost:before,
+    .quote-progress li.last-index .signpost:after{
+        content: none;
+    }
+
+    .quote-progress li.last-index .signpost .index{
+        color: #fff;
+        padding: 11px 0 0 10px;        
+    }
+
+    .quote-progress li.last-index .signpost .index:before{
+        content: '/';
+    }
+
+    /*============================== MISC */
+    /*------------ VEHICLE MODIFICATIONS WIDGET */
+    .vehicle-mod-widget{
+        position: relative;
+        width: calc(100% + 20px);
+        height: 456px;
+    }
+
+    .vehicle-mod-widget .listing{    
+        position: static;
+        height: 378px;        
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .vehicle-mod-widget .footer{    
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        bottom: 0;
+        left: 0;
+        -moz-box-shadow: 0 -10px 30px 0 rgba(0,0,0,.15);
+        -webkit-box-shadow: 0 -10px 30px 0 rgba(0,0,0,.15);
+        box-shadow: 0 -10px 30px 0 rgba(0,0,0,.15);
+        z-index: 50;
+    }
+
+    .vehicle-mod-widget .tabs-nav{    
+        position: static;
+        width: 100%;
+    }
+
+    .vehicle-mod-widget .tabs-nav > ul{    
+        display: block;
+    }
+
+    .vehicle-mod-widget .tabs-nav > ul > li a,
+    .vehicle-mod-widget .tabs-nav > ul > li.default a{    
+        z-index: 1;
+        width: auto;
+    }
+
+    .vehicle-mod-widget .tabs-nav > ul > li a:after,
+    .vehicle-mod-widget .tabs-nav > ul > li.default a:after{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 10px;
+        height: 7px;
+        top: 19px;
+        right: 20px;
+        border: none;
+        background: url(../../_common/img/icons.png) no-repeat -48px -16px;
+    }
+
+    .vehicle-mod-widget .tabs-nav > ul > li a.fixed{    
+        position: absolute;
+        top: 0;        
+        z-index: 20;
+        /*position: fixed;
+        z-index: 50;*/
+    }
+
+    .vehicle-mod-widget .tabs-nav > ul > li a.fixed.absolute{    
+        position: relative;
+        /*top: 140px;*/
+        z-index: 10;
+    }
+
+    .vehicle-mod-widget .tabs-nav > ul > li.selected a{    
+        width: 100%;
+    }
+
+    .vehicle-mod-widget .tabs-nav > ul > li.selected a:after { 
+        content: '';       
+        display: block;
+        width: 12px;
+        height: 12px;
+        top: 16px;
+        right: 19px;
+        background-position: -48px -48px;
+        border: none;
+    }
+
+    .vehicle-mod-widget .tabs-nav > ul > li .tag{
+        right: 40px;
+    }
+
+    .vehicle-mod-widget .tabs-nav > ul > li.default .tag{
+        color: #fff;
+        background: #259a30;
+    }
+
+    .vehicle-mod-widget .tabs-nav .checkbox-list{
+        position: static;
+        width: 100%;      
+        height: auto;  
+        border-bottom: 1px solid #ababab;
+        overflow: hidden;     
+    }
+
+    .vehicle-mod-widget .tabs-nav > ul > li.default .checkbox-list {
+        display: none;    
+    }
+
+    .vehicle-mod-widget .tabs-nav > ul > li.selected .checkbox-list {
+        /*display: none;*/
+    }
+
+    .vehicle-mod-widget .tabs-nav .checkbox-list li:last-child{
+        border-bottom: none;
+    }
+
+    .vehicle-mod-widget .tabs-nav .checkbox-list li label{
+        padding-left: 54px;
+    }
+
+    .vehicle-mod-widget .tabs-nav .checkbox-list li label:before{
+        left: 20px;
+    }
+
+    .vehicle-mod-widget .tabs-nav .checkbox-list li label:after{
+        left: 27px;
+    }
+
+    /*------------ RESULTS */
+    .result{
+        width: 100%;
+        margin-bottom: 10px;               
+    }
+
+    .result .result-information{        
+        height: auto;
+        background: transparent;
+    
+        box-shadow: none;   
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+
+        -webkit-border-top-right-radius: initial;        
+        -webkit-border-bottom-right-radius: initial;
+        -moz-border-radius-topright: initial;    
+        -moz-border-radius-bottomright: initial;
+        border-top-right-radius: initial;    
+        border-bottom-right-radius: initial;  
+        }
+
+    .result .premium-information{    
+        float: none;
+        width: 100%;
+        height: 100px;
+        background: #fff;
+    
+        box-shadow: 0 6px 0 0 #c6c6c6;   
+        -moz-box-shadow: 0 6px 0 0 #c6c6c6;
+        -webkit-box-shadow: 0 6px 0 0 #c6c6c6;
+
+        -webkit-border-top-right-radius: 3px;        
+        -webkit-border-bottom-right-radius: 3px;
+        -moz-border-radius-topright: 3px;    
+        -moz-border-radius-bottomright: 3px;
+        border-top-right-radius: 3px;    
+        border-bottom-right-radius: 3px;
+    }
+
+    .result .highlighter{
+        height: 106px;
+    }
+
+    .result .premium-information .partner-details .about-partner,
+    .result .premium-information .premium-totals,
+    .result .premium-information .excess-container,
+    .result .premium-information .extras{
+        display: none;
+    }
+
+    /* Loading state */
+    .result .result-message{
+        float: none;
+        width: 160px;
+        margin: 0 auto;
+        padding-left: 21px;
+        padding-top: 40px;
+    }
+
+    .result.loading .premium-information .partner-details .button{
+        display: none !important;
+    }
+
+    /* Partner details */
+    .result .premium-information .partner-details{
+        position: absolute;
+        width: 104px;
+        height: 106px;
+        top: 0;
+        left: 6px;
+        padding: 8px 0 0 10px;
+        z-index: 20;
+    }
+
+    .result .premium-information .partner-details img.logo{
+        width: 80px;
+        height: auto;
+    }
+
+    .result .premium-information .partner-details .result-more{
+        margin: 22px 0 0 0;
+    }
+    .result .premium-information .partner-details .result-more.close,
+    .result .premium-information .partner-details .result-more.loading{
+        display: none !important;
+    }
+
+    .result.more-loading .premium-information .partner-details .result-more{
+        display: none !important;
+    }
+
+    .result.more-loading .premium-information .partner-details .result-more.loading {
+        display: block !important;
+    }
+
+    /* Premiums */
+    .result .premium-information .premium-totals{
+        float: none;
+        width: 160px;
+        margin: 0 auto;
+        padding-left: 21px;
+        padding-top: 5px;
+    }
+
+    .result .premium-information .premium-totals.selected{
+        display: block;
+        background: transparent;
+        border-bottom: none;
+    }
+
+    /* Excess */
+    .result .premium-information .excess-container,
+    .result.home .premium-information .excess-container{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 9px 0 0 0;
+    }
+
+    .result .premium-information .excess-container .excess-value{
+        float: none;
+        display: block;
+        font-size: 1.125em; /* 18px */
+        line-height: 16px;   
+    }
+
+    /* Actions */
+    .result .actions{
+        position: absolute;
+        width: 75px;
+        height: 106px;
+        top: 0;
+        right: 0;
+        padding: 0;
+        z-index: 20;
+    }
+
+    .result .actions img.loading {
+        padding-right: 11px;    
+    }
+
+    /* Special offer */
+    .result .special-tab{
+        position: relative;
+        margin-top: -6px;
+        margin-left: 6px;
+        margin-right: 6px;
+        max-width: none;
+        z-index: 5;
+    }
+
+    /* /// More info panel */
+    .result.more-open .special-tab{
+        display: none;
+    }
+
+    .result.more-open .m-result-more-info{
+        display: block;
+    }
+
+    .result.more-open .partner-details .result-more{
+        display: none !important;
+    }
+    .result.more-open .partner-details .result-more.close{
+        display: block !important;
+    }
+
+    .result .m-result-more-info{                        
+        padding: 15px 15px 5px 15px;
+        margin: 6px 6px 0 6px;
+        background: -webkit-linear-gradient(#e2e2e2, #fff 10px);
+        background: -o-linear-gradient(#e2e2e2, #fff 10px);
+        background: -moz-linear-gradient(#e2e2e2, #fff 10px);
+        background: linear-gradient(#e2e2e2, #fff 10px);
+        border: 1px solid #ababab;
+        border-top: 0;
+        -moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+        -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+        font-size: 0.875em; /* 14px */        
+        line-height: 18px;  
+    }
+
+    .result .m-result-more-info .tooltip-container{
+        position: absolute;
+        width: 50px;
+        padding-right: 4px;
+        top: -4px;
+        right: -6px;
+        text-align: right;
+    }
+
+    .result .m-result-more-info .tooltip-container .tooltip {
+        bottom: 9px;
+        right: -6px;
+    }
+
+    .result .m-result-more-info .premium-totals,
+    .result .m-result-more-info .excess-totals{
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #c6c6c6;
+    }
+
+    .result .m-result-more-info .premium-totals strong,
+    .result .m-result-more-info .excess-totals strong{
+        font-family: 'SourceSansProBold', 'Calibri', 'Arial', sans-serif;     
+        font-weight: 700;  
+    }
+
+    .result .m-result-more-info .premium-totals .premium-info{        
+        color: #008014;
+    }    
+    
+    .result .m-result-more-info .extras{
+        padding-top: 2px;
+    }
+
+    .result .m-result-more-info .extra {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 12px;
+    }
+
+    .result .m-result-more-info .extra img {
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: -1px;
+        left: 0;
+    }
+
+    .result .m-result-more-info .extra.not-included span{
+        color: #777;
+    }
+
+    .result .m-result-more-info .extra.not-included .extra-value{
+        color: #333;
+    }
+
+    .result .m-result-more-info .extra.not-included .extra-value strong{
+        font-family: 'SourceSansProBold', 'Calibri', 'Arial', sans-serif;     
+        font-weight: 700;  
+    }  
+
+    .result .m-result-more-info .special-tab{
+        display: block;
+        float: none;
+        margin: 0 -15px;           
+    }
+
+    .result .m-result-more-info .special-tab div{        
+        float: none;        
+        padding-top: 7px;                     
+        padding-left: 45px;
+        -webkit-border-radius: initial;
+        -moz-border-radius: initial;
+        border-radius: initial;
+        border-top: none;
+        font-size: 1em;
+    }
+
+    .result .m-result-more-info .special-tab div:before{
+        top: 6px;
+        left: 15px;
+    }
+
+    .result .m-result-more-info .special-tab .special-offer:after{
+        top: 9px;
+        left: 18px;
+    }
+    .result .m-result-more-info .special-tab .telematics:after{
+        top: 12px;
+        left: 20px; 
+    }
+
+    .result .m-result-more-info .special-tab.dual div:nth-child(2){        
+        top: auto;
+    }
+
+    /*------------ COMMIT BOX */
+    .commit-box{
+        width: auto;
+        margin-bottom: 0;        
+        border: none;    
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;    
+    }
+
+    .commit-box section.main-content{
+        padding-top: 2px;
+    }
+
+    .commit-box section.secondary-content{
+        margin-bottom: 0; 
+    }
+
+    .commit-box section.tertiary-content{        
+        text-align: left;
+    }
+
+    .commit-box .logo{
+        padding-bottom: 10px;
+    }
+
+    .commit-box h4{
+        font-family: 'SourceSansProSemiBold', 'Calibri', 'Arial', sans-serif;  
+        font-size: 0.875em; /* 14px */
+        line-height: 18px;
+        font-weight: 600;
+        margin: 0 0 10px 0;
+    }
+}
+
+/*--------------------------------------------------=> Hi-Res */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 640px), only screen and (min--moz-device-pixel-ratio: 2)     and (max-width: 640px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 640px), only screen and (min-device-pixel-ratio: 2) and (max-width: 640px), only screen and (min-resolution: 192dpi) and (max-width: 640px), only screen and (min-resolution: 2dppx) and (max-width: 640px){                
+    /*.quote h1.logo img{    
+        background-image: url(../img/logo-goco-quote-m@2x.png);        
+        background-size: 230px 77px;   
+    }*/
+
+	.quote h1.logo img {
+		background: url(../../quote/img/logo-goco_17.svg) no-repeat 0 0;
+		
+		width: 140px;
+		margin-top: 13px;
+		background-size: 140px 24px;
+	}
+	
+	.quote header {
+		background-image: none;
+	}
+
+    .quote header .content-holder{        
+        background-image: url(../img/progress-hills-m@2x.png);
+        background-size: 320px 19px;   
+    }
+    .quote.alt header .content-holder{        
+        background-image: url(../img/progress-hills-m-alt@2x.png);
+        background-size: 320px 19px;   
+    }
+
+    .progress-container:before,
+    .progress-container:after {        
+        background-image: url(../img/progress-signposts-m@2x.png);        
+        background-size: 96px 64px;   
+    }
+
+    .vehicle-mod-widget .tabs-nav > ul > li a:after{
+        background-image: url(../../_common/img/icons@2x.png);     
+        background-size: 224px 256px;   
+    }
+}

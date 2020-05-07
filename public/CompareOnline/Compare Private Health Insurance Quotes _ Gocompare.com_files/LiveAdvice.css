@@ -1,0 +1,85 @@
+﻿.la
+{
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-500px;
+    width:1000px;
+    color:White;
+}
+.lamax
+{
+    position:absolute;
+    top:175px;
+    left:360px;
+	width:280px;
+	height:320px;
+    z-index:100000;
+}
+
+.lamax .iframe
+{
+    position:absolute;
+    top:10px;
+    left:0;
+	width:280px;
+	height:300px;
+	z-index:999;
+}
+
+.lamax .inside
+{
+    position:absolute;
+    top:0;
+    left:0;
+	width:280px;
+	height:320px;
+    background: transparent url(../img/chat-popup.gif) no-repeat;
+    z-index:1000;
+}
+
+.lamax .detail
+{
+     float:left; 
+/*     width:195px; 
+     margin:8px; */
+     width:210px; 
+     padding:8px; 
+     height:320px;
+}
+
+.lamax .dialog
+{
+    float:left;
+    width:170px;
+    height:240px;
+	overflow:hidden;
+	text-align:justify;
+    margin:10px 25px 5px 0;
+    padding:2px;
+    overflow:auto;
+    font-size:10px;
+    background:#c4fcb5;
+    color:Black;
+}
+
+.lamax .links
+{
+    text-decoration:none;
+    font-size:12px;
+}
+.lamax .links:hover
+{
+    text-decoration:underline;
+}
+
+/* the top and left must match the default values of the variables in LiveAdvicePopup.ascx.vb */
+.lamin
+{
+    position:absolute;
+    top:0;
+    left:850px;
+    z-index:1000;
+    width:140px;
+    height:31px;
+}
