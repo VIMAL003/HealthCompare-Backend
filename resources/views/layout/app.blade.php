@@ -39,7 +39,7 @@
         @else
         <meta property="og:image" content="{{ asset('/images/placeholder.jpg') }}" />
         @endif
-        <script type="text/javascript" src="{{ asset('fonts/MyFontsWebfontsKit.js') }}"></script>
+        <script type="text/javascript" src="{{ mix('fonts/MyFontsWebfontsKit.js') }}"></script>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         @if(env('APP_ENV') === 'dev')
             <!-- Hotjar Tracking Code for http://hcstaging.co.uk/ -->
