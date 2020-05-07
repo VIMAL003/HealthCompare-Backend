@@ -13,15 +13,14 @@
           padding-left:0;
           li.star{
             display: inline;
-            .fa-star{
+            svg{
+              display:none;
               width:36px;
               height:36px;
-              color: $brandColor17;
+              // color: $brandColor17;
             }
             &.filled{
-              .fa-star{
-                color: $brandColor1;
-              }
+              display: inline-block;
             }
           }
         }
