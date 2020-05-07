@@ -15,7 +15,7 @@
 
 .card-body h4,
 .card-body h5 {
-	margin-bottom: .5rem;
+    margin-bottom: .5rem;
 }
 
 
@@ -51,20 +51,20 @@ header a.nav-link.dropdown-toggle::after {
 /* add */
 
 /* Line 406 _reboot.scss */
-header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu {
+header #navbarContent>ul.navbar-nav li.nav-item.dropdown.megamenu {
     position: static;
     font-size: 1rem;
 }
 
 /* Line 326 common.scss */
-header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu h4 {
+header #navbarContent>ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu h4 {
     color: #037098;
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
 
 /* Line 469 _reboot.scss */
-header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu h3 {
+header #navbarContent>ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem !important;
 }
@@ -72,7 +72,8 @@ header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-me
 
 /* Change */
 
-header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu.mega-menu-compare .list-1 ul.list li img, header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu.mega-menu-compare .list-2 ul.list li img {
+header #navbarContent>ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu.mega-menu-compare .list-1 ul.list li img,
+header #navbarContent>ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu.mega-menu-compare .list-2 ul.list li img {
     width: 1.5rem;
     height: 1.6rem;
 }
@@ -85,9 +86,43 @@ header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-me
 
 /* Alert */
 .alert-dismissible .close {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  padding: 0.75rem 1.25rem;
-  color: inherit;
-  }
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 0.75rem 1.25rem;
+    color: inherit;
+}
+
+
+
+
+
+header #navbarContent>ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu.mega-menu-help img {
+    width: auto;
+    margin-bottom: 1rem;
+    height: 22px !important;
+}
+
+header a.nav-link.dropdown-toggle::after {
+    content: "";
+    border: unset;
+    background-image: url(/images/icons/chevron-down.svg);
+    background-position: center;
+    position: relative;
+    background-size: contain;
+    width: 8px;
+    top: 3px;
+    height: 8px;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 1200px) {
+
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1200px;
+    }
+}
