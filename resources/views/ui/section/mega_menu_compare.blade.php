@@ -9,14 +9,14 @@
         <div class="col-12 col-lg-3 d-none d-lg-block context-content">
           <h4>{{$megaMenuCompare['slogan']}}</h4>
           <h3>{{$megaMenuCompare['heading']}}</h3>
-          <a href="{{$megaMenuCompare['ctaPermalink']}}">{{$megaMenuCompare['ctaText']}}</a>
+          <a href="{{url($megaMenuCompare['ctaPermalink'])}}">{{$megaMenuCompare['ctaText']}}</a>
         </div>
         <div class="col-12 col-lg-3 list-1">
           <ul class="list">
             @foreach ($megaMenuCompare['lists'][0] as $listItem)
               <li>
                 <img src="{{ \App\Helpers\Utils::convertAssetBaseUrl($listItem['iconUrl']) }}" alt="">
-                <a href="{{$listItem['permalink']}}">{{$listItem['heading']}}</a>
+                <a href="{{url($listItem['permalink'])}}">{{$listItem['heading']}}</a>
               </li>
             @endforeach
           </ul>
@@ -26,7 +26,7 @@
             @foreach ($megaMenuCompare['lists'][1] as $listItem)
             <li>
               <img src="{{ \App\Helpers\Utils::convertAssetBaseUrl($listItem['iconUrl'] ) }}" alt="">
-              <a href="{{$listItem['permalink']}}">{{$listItem['heading']}}</a>
+              <a href="{{url($listItem['permalink'])}}">{{$listItem['heading']}}</a>
             </li>
             @endforeach
           </ul>

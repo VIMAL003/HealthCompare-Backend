@@ -6,7 +6,7 @@
         @foreach ($megaMenuHelp['sections'] as $section)
           <div class="col-12 col-lg-3">
             <img class="" src="{{ \App\Helpers\Utils::convertAssetBaseUrl($section['iconUrl'])}}" alt="">
-            <a href="{{$section['permalink']}}">{{$section['heading']}}</a>
+            <a href="{{url($section['permalink'])}}">{{$section['heading']}}</a>
             <p>{{$section['caption']}}</p>
           </div>
         @endforeach
