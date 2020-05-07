@@ -1,14 +1,15 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/common.css": "/css/common.css",
-    "/css/app.css": "/css/app.css",
-    "/js/app.js.map": "/js/app.js.map",
-    "/css/common.css.map": "/css/common.css.map",
-    "/css/app.css.map": "/css/app.css.map",
-    "/js/common.js": "/js/common.js",
-    "/js/common.js.map": "/js/common.js.map",
-    "/js/components/compare-brokers-modal.js": "/js/components/compare-brokers-modal.js",
-    "/js/components/compare-brokers-modal.js.map": "/js/components/compare-brokers-modal.js.map",
-    "/js/components/search-form.js": "/js/components/search-form.js",
-    "/js/components/search-form.js.map": "/js/components/search-form.js.map"
+    "/js/app.js": "/js/app.js?id=d6c07f35077b35cd7e0d",
+    "/css/common.css": "/css/common.css?id=fde806ee9c6b9249bbb5",
+    "/css/app.css": "/css/app.css?id=ee3b399ab49d0986c041",
+    "/js/app.js.map": "/js/app.js.map?id=0d04928dad4c9662054a",
+    "/css/common.css.map": "/css/common.css.map?id=043cf92a90aff45ba330",
+    "/css/app.css.map": "/css/app.css.map?id=e7de2cda47bdfc765332",
+    "/js/common.js": "/js/common.js?id=5a1d764d4ca186883ae7",
+    "/js/common.js.map": "/js/common.js.map?id=2318d170a9d6f7d5905e",
+    "/js/components/compare-brokers-modal.js": "/js/components/compare-brokers-modal.js?id=89c17d7156ce84a24583",
+    "/js/components/compare-brokers-modal.js.map": "/js/components/compare-brokers-modal.js.map?id=1ae40996aa4c5f1668b3",
+    "/js/components/search-form.js": "/js/components/search-form.js?id=9d927b9adb8c5ba0b2ef",
+    "/js/components/search-form.js.map": "/js/components/search-form.js.map?id=3876597afcb4c50a4f12",
+    "/js/stickybits.js": "/js/stickybits.js?id=d443233c14dd5cd278b7"
 }
