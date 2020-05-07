@@ -1,4 +1,5 @@
-{{-- <form id="search_form" method="get" action="/results-page" class="search-form p-lg-0">
+{{-- <div class="banner-form-wrapper">
+  <form id="search_form" method="get" action="/results-page" class="search-form p-lg-0">
   <div class="form-row">
     <div class="form-group col-lg-4 mb-1 mb-lg-0 p-lg-0 treatment-group treatment-parent">
       <label for="treatment" class="sr-only">Select a treatment (if known)</label>
@@ -26,10 +27,12 @@
       <button type="submit" id="submit_search" class="btn btn-block bg-brandColor1 text-white mb-0">Search</button>
     </div>
   </div>
-</form> --}}
+</form>
+</div> --}}
 
 
-{{-- <form id="search_form" method="get" action="/results-page" class="search-form p-lg-0">
+<div class="">
+  <form id="search_form" method="get" action="/results-page" class="search-form p-lg-0">
   <div class="form-row">
     <div class="form-group col-lg-4 mb-1 mb-lg-0 p-lg-0 treatment-group treatment-parent">
       @include('components.basic.select', [
@@ -78,11 +81,13 @@
       <button type="submit" id="submit_search" class="btn btn-block bg-brandColor1 text-white mb-0">Search</button>
     </div>
   </div>
-</form> --}}
+</form>
+</div>
 
+
+
+{{--
 <div class="banner-form-wrapper">
-
-
   <form id="search_form"
   class="form-element"
   method="get"
@@ -146,4 +151,4 @@
             ])
     </div>
   </form>
-</div>
+</div> --}}
