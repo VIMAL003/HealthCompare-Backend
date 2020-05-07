@@ -1,25 +1,25 @@
 {
   "sections":[
     {
-      "iconUrl":"../images/consultants.svg",
+      "iconUrl":"../images/no-response.svg",
       "heading": "Not had a response?",
       "permalink": "#",
       "caption": "Everything you need to know about how it works."
     },
     {
-      "iconUrl":"../images/consultants.svg",
+      "iconUrl":"../images/faqs.svg",
       "heading": "Frequently asked questions",
       "permalink": "#",
       "caption": "Learn more about the health care reslated issues."
     },
     {
-      "iconUrl":"../images/consultants.svg",
+      "iconUrl":"../images/how-to-use.svg",
       "heading": "How to use our website",
       "permalink": "#",
       "caption": "Weekly health care updates happening in the world."
     },
     {
-      "iconUrl":"../images/consultants.svg",
+      "iconUrl":"../images/guide-tutorials.svg",
       "heading": "Guides & Tutorials",
       "permalink": "#",
       "caption": "Not sure how the website works? Find out more here."
