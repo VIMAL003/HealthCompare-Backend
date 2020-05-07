@@ -123,7 +123,7 @@
 
         <script src="https://maps.googleapis.com/maps/api/js?key={{ config('services.googleApiKey') }}"
                 async defer></script>
-        <script>
+        {{-- <script>
             window.addEventListener("load", function(){
                 // https://www.osano.com/cookieconsent/download/
                 window.cookieconsent.initialise({
@@ -147,7 +147,7 @@
                         "href": "/cookie-policy"
                     }
                 })});
-        </script>
+        </script> --}}
         <style>
             .cc-window.cc-floating {
                 max-width: 4000px !important;
