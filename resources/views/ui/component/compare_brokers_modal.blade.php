@@ -32,13 +32,15 @@
                   </div>
                   <div class="col pr-0">
                     <a href="{{$provider['cta']['websitePermalink']}}" class="btn btn-brandRounded rounded-right text-white bg-brandColor9 w-100">
-                      <i class="fas fa-phone"></i>
+                      {{-- <i class="fas fa-phone"></i> --}}
+                      @svg('icon-web')
                       Web
                     </a>
                   </div>
                   <div class="col pl-1">
                     <a href="{{$provider['cta']['phonePermalink']}}" class="btn btn-brandRounded rounded-left text-white bg-brandColor9 w-100">
-                      <i class="fas fa-phone"></i>
+                      {{-- <i class="fas fa-phone"></i> --}}
+                      @svg('icon-phone')
                       Call
                     </a>
                   </div>
