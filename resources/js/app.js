@@ -14,7 +14,8 @@ import 'bootstrap/js/dist/modal';
 
 
 // require('bootstrap-select/js/bootstrap-select');                                  // Searchable dropdowns
-import 'bootstrap-select/dist/js/bootstrap-select';                                  // Searchable dropdowns
+import 'bootstrap-select/js/bootstrap-select';                                  // Searchable dropdowns
+// $.fn.dropdown.Constructor.VERSION = "4";
 $.fn.selectpicker.Constructor.BootstrapVersion = '4';
 
 import 'cookieconsent';                                     // Cookie consent plugin
