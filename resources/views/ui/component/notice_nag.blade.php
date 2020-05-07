@@ -6,7 +6,7 @@
           Supporting our <img class="nhs-logo" src="{{ secure_asset('images/rcd/nhs-logo.svg') }}" height="20" alt="">
         </p>
         <button type="button" class="close text-white" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true">@svg('times')</span>
         </button>
       </div>
     </div>
