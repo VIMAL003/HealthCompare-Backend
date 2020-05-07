@@ -1,5 +1,10 @@
 @import 'component/menu-icon';
 
+// For conflicts
+header .dropdown-toggle{
+  border:none;
+}
+
 main {
   &.sidebar-active {
     position: relative;
@@ -142,7 +147,7 @@ header {
               color: $brandColor1;
               font-size: 1.1rem;
             }
-            
+
             a {
               color: $brandColor15;
               text-decoration: underline;
