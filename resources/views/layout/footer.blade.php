@@ -1,5 +1,5 @@
 <footer class="footer position-relative">
-    <div class="back-top-wrapper mt-4 position-absolute">
+    {{-- <div class="back-top-wrapper mt-4 position-absolute">
         <div class="container back-top-content d-flex justify-content-end">
             @include('components.basic.button', [
             'id'            => 'back-to-top',
@@ -8,7 +8,7 @@
             'hrefValue'     => '#top',
             'svg'           => 'chevron-up'])
         </div>
-    </div>
+    </div> --}}
     <div class="footer-upper">
         <div class="container">
             <div class="row">
