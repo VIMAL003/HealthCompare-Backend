@@ -94,9 +94,9 @@
             <!-- End Google Tag Manager (noscript) -->
         @endif
 
-        @include('ui.component.cookie_nag')
+        {{-- @include('ui.component.cookie_nag') --}}
         @include('layout.header')
-        @include('ui.component.notice_nag')
+        {{-- @include('ui.component.notice_nag') --}}
 
         @include('components.basic.specialAlert')
         @include('components.basic.alert')
