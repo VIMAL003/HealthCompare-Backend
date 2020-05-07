@@ -25,13 +25,18 @@
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
     }
-    .form-control {
+    .form-control,
+    button.dropdown-toggle {
       height: calc(2.8em + .75rem + 2px);
+      border:none;
     }
     .custom-select {
       height: calc(2.8em + .75rem + 2px);
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
+    }
+    button[type=submit]{
+      height:100%;
     }
   }
 }
