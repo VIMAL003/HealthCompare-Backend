@@ -22,7 +22,7 @@
             <meta name="robots" content="noindex,nofollow">
         @endif
 
-        {{-- <link href="{{ mix('css/app.css') }}" rel="stylesheet"> --}}
+        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
         <link href="{{ mix('css/common.css') }}" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="{{ secure_asset('images/icons/favicon/apple-touch-icon.png') }}">
         <link rel="icon" type="image/png" sizes="32x32" href="{{ secure_asset('images/icons/favicon/favicon-32x32.png') }}">

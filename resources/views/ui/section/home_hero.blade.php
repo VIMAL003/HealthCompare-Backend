@@ -18,7 +18,7 @@
         @yield('home-search')
       @else
         <div class="col-12 col-lg-12 home-search order-2 order-lg-3">
-          {{-- @include('ui.component.search_form') --}}
+          @include('ui.component.search_form')
         </div>
       @endif
 
