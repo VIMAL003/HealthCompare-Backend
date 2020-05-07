@@ -37,7 +37,7 @@
     <div class="form-group col-lg-4 mb-1 mb-lg-0 p-lg-0 treatment-group treatment-parent">
       @include('components.basic.select', [
         'selectPicker'          => 'true',
-        'selectClass'           => 'big select-picker',
+        'selectClass'           => 'big btn-lg custom-select select-picker',
         'options'               => $data['procedures'],
         'group'                 => true,
         'groupName'             => 'procedures',
@@ -67,7 +67,7 @@
     </div>
     <div class="form-group col-lg-4 mb-1 mb-lg-0 p-lg-0 d-none distance-group radius-parent">
       @include('components.basic.select', [
-        'selectClass'           =>  'distance-dropdown big select-picker',
+        'selectClass'           =>  'distance-dropdown custom-select big btn-lg select-picker',
         'selectWrapperClass'    =>  'w-100',
         'selectParentClass'     =>  'd-md-flex w-100',
         'options'               =>  \App\Helpers\Utils::radius,
