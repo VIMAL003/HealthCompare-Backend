@@ -5,10 +5,10 @@
       {{-- <div class="card-deck"> --}}
       @foreach ( $compareNavBlocks['cards'] as $card)
       <div class="col mb-3 px-2 {{ !empty($card['cardClass']) ? $card['cardClass'] : ''}}">
-        <div class="card">
+        <div class="card" onclick="window.location.href= '{{ url($card['permalink']) }}'">
           <img src="{{ \App\Helpers\Utils::convertAssetBaseUrl($card['iconUrl'])}}" class="mx-auto" alt="">
           <div class="card-body">
-            <a href="{{$card['permalink']}}" class="card-title">{{$card['heading']}}</a>
+            <a href="{{url($card['permalink'])}}"  class="card-title">{{$card['heading']}}</a>
           </div>
         </div>
       </div>
