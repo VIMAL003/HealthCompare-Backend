@@ -13,7 +13,7 @@
       "subtitle":"Compare quotes from a wide range of policies instantly online.",
       "imgUrl": "../images/compare-online.svg",
       "permalink": "/CompareOnline/health-insurance.html",
-      "cardClass": ""
+      "cardClass": "open-in-new-tab"
     },
     {
       "heading":"Compare Brokers",
