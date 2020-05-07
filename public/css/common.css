@@ -680,7 +680,8 @@ header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-me
 }
 
 /* Change */
-header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu.mega-menu-compare .list-1 ul.list li img, header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu.mega-menu-compare .list-2 ul.list li img {
+header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu.mega-menu-compare .list-1 ul.list li img,
+header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu.mega-menu-compare .list-2 ul.list li img {
   width: 1.5rem;
   height: 1.6rem;
 }
@@ -696,6 +697,34 @@ header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-me
   color: inherit;
 }
 
+header #navbarContent > ul.navbar-nav li.nav-item.dropdown.megamenu .dropdown-menu.mega-menu-help img {
+  width: auto;
+  margin-bottom: 1rem;
+  height: 22px !important;
+}
+
+header a.nav-link.dropdown-toggle::after {
+  content: "";
+  border: unset;
+  background-image: url(/images/icons/chevron-down.svg);
+  background-position: center;
+  position: relative;
+  background-size: contain;
+  width: 8px;
+  top: 3px;
+  height: 8px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1200px) {
+  .container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container {
+    max-width: 1200px;
+  }
+}
 h1 {
   font-family: sofia-pro;
 }
@@ -1738,13 +1767,13 @@ p {
 #feedbackModal .modal-content .modal-body form ul.rating li.star {
   display: inline;
 }
-#feedbackModal .modal-content .modal-body form ul.rating li.star .fa-star {
+#feedbackModal .modal-content .modal-body form ul.rating li.star svg {
+  display: none;
   width: 36px;
   height: 36px;
-  color: #ececec;
 }
-#feedbackModal .modal-content .modal-body form ul.rating li.star.filled .fa-star {
-  color: #037098;
+#feedbackModal .modal-content .modal-body form ul.rating li.star.filled {
+  display: inline-block;
 }
 #feedbackModal .modal-content .modal-body form textarea {
   width: 75%;

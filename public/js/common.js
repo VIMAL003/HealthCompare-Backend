@@ -15378,7 +15378,7 @@ __webpack_require__.r(__webpack_exports__);
 //     backdrop:'static'
 // });
 
-if (document.querySelector('#feedbackModal')) {
+if (document.querySelector('#feedbackModal') && false) {
   var blurred = false;
   window.addEventListener('focus', function (e) {
     if (!blurred) {
@@ -15448,9 +15448,10 @@ if (document.querySelector('#navbarContent')) {
 /***/ (function(module, exports) {
 
 var shown = false;
+var is_live = false;
 var rating_elem = document.querySelector('ul.rating');
 
-if (rating_elem) {
+if (rating_elem && is_live) {
   var _rating_star_elems = rating_elem.querySelectorAll('li.star');
 
   _rating_star_elems.forEach(function (rating_star_elem, index) {
