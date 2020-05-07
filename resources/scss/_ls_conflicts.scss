@@ -163,3 +163,10 @@ body {
 body.results-page {
   color: #1b1b1b;
   }
+
+
+.results-page .result-item-menu li p, .test-page .result-item-menu li p {
+  white-space: nowrap;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  }
