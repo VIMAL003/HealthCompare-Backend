@@ -1,5 +1,6 @@
 // import $ from 'jquery';
 // import 'bootstrap';
+import 'bootstrap/js/dist/modal';
 
 // $('#feedbackModal').modal({
 //     show:true,

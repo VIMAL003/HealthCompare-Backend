@@ -1,16 +1,19 @@
 // import $ from 'jquery';
 // import 'bootstrap';
+import 'bootstrap/js/dist/modal';
 if ( document.querySelector( '#compareBrokersModal' ) ){
-
-  $('#compareBrokersModal').modal({
-    show:false,
-    backdrop:'static'
-  });
-
   const modal_trigger = document.querySelector('.compare-brokers-modal-trigger')
+  if ( modal_trigger ){
 
-  modal_trigger.addEventListener('click',(e)=>{
-    e.preventDefault();
-    $('#compareBrokersModal').modal('show')
-  })
+    $('#compareBrokersModal').modal({
+      show:false,
+      backdrop:'static'
+    });
+
+
+    modal_trigger.addEventListener('click',(e)=>{
+      e.preventDefault();
+      $('#compareBrokersModal').modal('show')
+    })
+  }
 }
