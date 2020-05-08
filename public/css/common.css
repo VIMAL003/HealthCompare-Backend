@@ -780,10 +780,23 @@ body.results-page {
   color: #1b1b1b;
 }
 
-.results-page .result-item-menu li p, .test-page .result-item-menu li p {
+.results-page .result-item-menu li p,
+.test-page .result-item-menu li p {
   white-space: nowrap;
   font-size: 0.875rem;
   line-height: 1.2;
+  font-family: sofia-pro;
+}
+
+@media screen and (min-width: 992px) {
+  .home-hero .home-search .search-form button[type=submit] {
+    height: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+.js-stickybit-parent #resultspage_form {
+  z-index: 1;
 }
 
 h1 {
