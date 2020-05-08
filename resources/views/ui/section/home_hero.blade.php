@@ -1,4 +1,5 @@
 <div class="container_fluid home-hero pt-3">
+  <div class="background-wrapper"></div>
   <div class="container">
     <div class="row">
 

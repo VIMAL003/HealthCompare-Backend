@@ -1,46 +1,88 @@
 .landing-hero {
   background-color: lighten($brandColor17, 5%);
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 
-  &:before {
-    content: "";
 
-    display: none;
+  .background-wrapper{
+    &:before {
+      content: "";
 
-    @media screen and (min-width: 992px) {
-      display: block;
+      display: none;
+
+      @media screen and (min-width: 992px) {
+        display: block;
+      }
+
+      position: absolute;
+
+      width:100%;
+      height:100%;
+      top:0;
+
+      background-image: url(../images/rcd/runners.png);
+      background-size: contain;
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      z-index: 2;
     }
 
-    position: absolute;
+    &:after {
+      content: "";
 
-    width:100%;
-    height:100%;
-    top:0;
+      position: absolute;
 
-    background-image: url(../images/rcd/runners.png);
-    background-size: contain;
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    z-index: 2;
+      left: 45vw;
+      bottom: -25vw;
+      width: 70vw;
+      height: 70vw;
+
+      background: $brandColor18;
+      border-radius: 50%;
+
+      z-index: 1;
+
+    }
   }
 
-  &:after {
-    content: "";
+  // :before {
+  //   content: "";
 
-    position: absolute;
+  //   display: none;
 
-    left: 45vw;
-    bottom: -25vw;
-    width: 70vw;
-    height: 70vw;
+  //   @media screen and (min-width: 992px) {
+  //     display: block;
+  //   }
 
-    background: $brandColor18;
-    border-radius: 50%;
+  //   position: absolute;
 
-    z-index: 1;
+  //   width:100%;
+  //   height:100%;
+  //   top:0;
 
-  }
+  //   background-image: url(../images/rcd/runners.png);
+  //   background-size: contain;
+  //   background-position: bottom right;
+  //   background-repeat: no-repeat;
+  //   z-index: 2;
+  // }
+
+  // &:after {
+  //   content: "";
+
+  //   position: absolute;
+
+  //   left: 45vw;
+  //   bottom: -25vw;
+  //   width: 70vw;
+  //   height: 70vw;
+
+  //   background: $brandColor18;
+  //   border-radius: 50%;
+
+  //   z-index: 1;
+
+  // }
 
 
   h2 {
